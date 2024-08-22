@@ -56,7 +56,9 @@
 
 Welcome to the GitHub repository for our survey paper titled *"Controllable Text Generation for Large Language Models: A Survey."* This repository includes all the resources, code, and references related to the paper. Our objective is to provide a thorough overview of the techniques and methodologies used to control text generation in large language models (LLMs), with an emphasis on both theoretical underpinnings and practical implementations.
 
-![Survey Framework](figures/framework.png)
+<div align="center">
+    <img src="figures/framework.png" alt="Survey Framework" width="70%">
+</div>
 
 Our survey explores the following key areas:
 
