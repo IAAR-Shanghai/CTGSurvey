@@ -1,0 +1,16 @@
+\begin{table*}[htbp]
+\centering
+\caption{Common Base Models and Datasets for Training Classifiers}
+\label{tab:classifier}
+\renewcommand{\arraystretch}{1.6}
+\footnotesize
+\begin{tabular}{lp{0.36\textwidth}p{0.48\textwidth}}
+\hline
+\multicolumn{1}{c}{\textbf{Attribute}} & \multicolumn{1}{l}{\textbf{Base Model}} & \multicolumn{1}{l}{\textbf{Dataset}} \\ \hline
+
+\multirow{1.5}{*}{\makecell[l]{\textbf{Emotion}}} & BERT\cite{devlin_naacl19_bert}, RoBERTa\cite{liu_arxiv19_roberta}, DeBERTa\cite{he_iclr21_deberta}, distilBERT\cite{sanh_arxiv19_distilbert}, MacBERT\cite{cui_emnlp20_revisiting} & IMDB\cite{maas_acl11_learning}, AMAZON-5\cite{mcauley_recsys13_hidden}, SST-5\cite{socher_emnlp13_recursive}, SST-2\cite{socher_emnlp13_recursive}, Yelp\cite{zhang_nips15_character}, Twitter sentiment\cite{barbieri_emnlp20_tweeteval}, DailyDialog\cite{li_ijcnlp17_dailydialog} \\ \hline
+\textbf{Topic} & BERT\cite{devlin_naacl19_bert}, RoBERTa\cite{liu_arxiv19_roberta} & AG-NEWS\cite{zhang_nips15_character}, DBpedia\cite{zhang_nips15_character} \\ \hline
+\multirow{1.5}{*}{\makecell[l]{\textbf{Toxicity}}} & RoBERTa\cite{liu_arxiv19_roberta}, DeBERTa\cite{he_iclr21_deberta} & Jigsaw Toxic Comment Classification Challenge\cite{cjadams_kaggle18_jigsaw}, RealToxicityPrompts\cite{gehman_emnlp20_realtoxicityprompts} \\ \hline
+
+\end{tabular}
+\end{table*}

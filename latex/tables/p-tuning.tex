@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\footnotesize
+\caption{Comparison of Prefix Based Tuning Methods}
+\label{tab:p-tuning}
+\begin{tabular}{l p{0.22\textwidth}p{0.22\textwidth}p{0.22\textwidth}}
+\toprule
+\textbf{Feature}             & \textbf{Prompt Tuning\cite{lester_emnlp21_PromptTuning}}                 & \textbf{Prefix Tuning\cite{li_acl21_PrefixTuning}}                 & \textbf{P-tuning\cite{liu_arxiv21_PTuning}}                      \\ \midrule
+\textbf{Optimization Scope}  & \makecell[l]{Input Embeddings}                       & \makecell[l]{All Layers}                             & \makecell[l]{Input Sequence}                         \\
+\textbf{Optimization Method} & \makecell[l]{Directly optimize\\ prompt embeddings}    & \makecell[l]{FFN to optimize\\ prefix parameters}      & \makecell[l]{LSTM-based\\ prompt encoder}              \\
+\textbf{Model Compatibility} & \makecell[l]{T5}                                     & \makecell[l]{GPT}                                    & \makecell[l]{All Language Models}                    \\ \midrule
+\multirow{2}{*}{\textbf{Common Points}} & \multicolumn{3}{l}{1. Keep main model parameters frozen \& 2. Add trainable task-specific vectors}                             \\
+                             & \multicolumn{3}{l}{3. Reduce computational resources \& 4. Comparable performance to full fine-tuning}                       \\ \bottomrule
+\end{tabular}
+\end{table}

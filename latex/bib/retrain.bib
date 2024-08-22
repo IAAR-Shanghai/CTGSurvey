@@ -1,0 +1,300 @@
+@misc{keskar_arxiv19_Ctrl,
+      title={CTRL: A Conditional Transformer Language Model for Controllable Generation}, 
+      author={Nitish Shirish Keskar and Bryan McCann and Lav R. Varshney and Caiming Xiong and Richard Socher},
+      year={2019},
+      eprint={1909.05858},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+
+@inproceedings{chan_iclr21_CoCon,
+title={CoCon: A Self-Supervised Approach for Controlled Text Generation},
+author={Alvin Chan and Yew-Soon Ong and Bill Pung and Aston Zhang and Jie Fu},
+booktitle={International Conference on Learning Representations},
+year={2021},
+url={https://openreview.net/forum?id=VD_ozqvBy4W}
+}
+
+@inproceedings{arora_aacl22_Director,
+    title = "Director: Generator-Classifiers For Supervised Language Modeling",
+    author = "Arora, Kushal  and
+      Shuster, Kurt  and
+      Sukhbaatar, Sainbayar  and
+      Weston, Jason",
+    editor = "He, Yulan  and
+      Ji, Heng  and
+      Li, Sujian  and
+      Liu, Yang  and
+      Chang, Chua-Hui",
+    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = nov,
+    year = "2022",
+    address = "Online only",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.aacl-main.39",
+    pages = "512--526",
+    abstract = "Current language models achieve low perplexity but their resulting generations still suffer from toxic responses, repetitiveness, and contradictions. The standard language modeling setup fails to address these issues. In this paper, we introduce a new architecture, Director, that consists of a unified generator-classifier with both a language modeling and a classification head for each output token. Training is conducted jointly using both standard language modeling data, and data labeled with desirable and undesirable sequences. Experiments in several settings show that the model has competitive training and decoding speed compared to standard language models while yielding superior results, avoiding undesirable behaviors while maintaining generation quality. It also outperforms existing model guiding approaches in terms of both accuracy and efficiency. Our code is made publicly available.",
+}
+
+@inproceedings{zhang_emnlp23_DASC,
+    title = "Semantic Space Grounded Weighted Decoding for Multi-Attribute Controllable Dialogue Generation",
+    author = "Zhang, Zhiling  and
+      Wu, Mengyue  and
+      Zhu, Kenny",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.817",
+    doi = "10.18653/v1/2023.emnlp-main.817",
+    pages = "13230--13243",
+    abstract = "Controlling chatbot utterance generation with multiple attributes such as personalities, emotions and dialogue acts is a practically useful but under-studied problem. We propose a novel framework called DASC that possesses strong controllability with a weighted decoding paradigm, while improving generation quality with the grounding in an attribute semantics space. Generation with multiple attributes is then intuitively implemented with an interpolation of multiple attribute embeddings, which results in substantial reduction in the model sizes. Experiments show that DASC can achieve high control accuracy in generation task with the simultaneous control of 3 aspects while also producing interesting and reasonably sensible responses, even in an out-of-distribution robustness test.",
+}
+
+@inproceedings{carlsson_acl22_NRP,
+    title = "Fine-Grained Controllable Text Generation Using Non-Residual Prompting",
+    author = {Carlsson, Fredrik  and
+      {\"O}hman, Joey  and
+      Liu, Fangyu  and
+      Verlinden, Severine  and
+      Nivre, Joakim  and
+      Sahlgren, Magnus},
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.471",
+    doi = "10.18653/v1/2022.acl-long.471",
+    pages = "6837--6857",
+    abstract = "The introduction of immensely large Causal Language Models (CLMs) has rejuvenated the interest in open-ended text generation. However, controlling the generative process for these Transformer-based models is at large an unsolved problem. Earlier work has explored either plug-and-play decoding strategies, or more powerful but blunt approaches such as prompting. There hence currently exists a trade-off between fine-grained control, and the capability for more expressive high-level instructions. To alleviate this trade-off, we propose an encoder-decoder architecture that enables intermediate text prompts at arbitrary time steps. We propose a resource-efficient method for converting a pre-trained CLM into this architecture, and demonstrate its potential on various experiments, including the novel task of contextualized word inclusion. Our method provides strong results on multiple experimental settings, proving itself to be both expressive and versatile.",
+}
+
+@Article{zhu_2023_AlSeCond,
+AUTHOR = {Zhu, Linan and Xu, Yifei and Zhu, Zhechao and Bao, Yinwei and Kong, Xiangjie},
+TITLE = {Fine-Grained Sentiment-Controlled Text Generation Approach Based on Pre-Trained Language Model},
+JOURNAL = {Applied Sciences},
+VOLUME = {13},
+YEAR = {2023},
+NUMBER = {1},
+ARTICLE-NUMBER = {264},
+URL = {https://www.mdpi.com/2076-3417/13/1/264},
+ISSN = {2076-3417},
+ABSTRACT = {Sentiment-controlled text generation aims to generate texts according to the given sentiment. However, most of the existing studies focus only on the document- or sentence-level sentiment control, leaving a gap for finer-grained control over the content of generated results. Fine-grained control allows a generated review to express different opinions toward multiple aspects. Some previous works attempted to generate reviews conditioned on aspect-level sentiments, but they usually suffer from low adaptability and the lack of an annotated dataset. To alleviate these problems, we propose a novel pre-trained extended generative model that can dynamically refer to the prompt sentiment, together with an auxiliary classifier that extracts the fine-grained sentiments from the unannotated sentences, thus we conducted training on both annotated and unannotated datasets. We also propose a query-hint mechanism to further guide the generation process toward the aspect-level sentiments at every time step. Experimental results from real-world datasets demonstrated that our model has excellent adaptability in generating aspect-level sentiment-controllable review texts with high sentiment coverage and stable quality since, on both datasets, our model steadily outperforms other baseline models in the metrics of BLEU-4, METETOR, and ROUGE-L etc. The limitation of this work is that we only focus on fine-grained sentiments that are explicitly expressed. Moreover, the implicitly expressed fine-grained sentiment-controllable text generation will be an important puzzle for future work.},
+DOI = {10.3390/app13010264}
+}
+
+@misc{chai_arxiv22_fast,
+      title={FAST: Improving Controllability for Text Generation with Feedback Aware Self-Training}, 
+      author={Junyi Chai and Reid Pryzant and Victor Ye Dong and Konstantin Golobokov and Chenguang Zhu and Yi Liu},
+      year={2022},
+      eprint={2210.03167},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2210.03167}, 
+}
+
+@inproceedings{zhang_emnlp20_POINTER,
+    title = "{POINTER}: Constrained Progressive Text Generation via Insertion-based Generative Pre-training",
+    author = "Zhang, Yizhe  and
+      Wang, Guoyin  and
+      Li, Chunyuan  and
+      Gan, Zhe  and
+      Brockett, Chris  and
+      Dolan, Bill",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.698",
+    doi = "10.18653/v1/2020.emnlp-main.698",
+    pages = "8649--8670",
+    abstract = "Large-scale pre-trained language models, such as BERT and GPT-2, have achieved excellent performance in language representation learning and free-form text generation. However, these models cannot be directly employed to generate text under specified lexical constraints. To address this challenge, we present POINTER (PrOgressive INsertion-based TransformER), a simple yet novel insertion-based approach for hard-constrained text generation. The proposed method operates by progressively inserting new tokens between existing tokens in a parallel manner. This procedure is recursively applied until a sequence is completed. The resulting coarse-to-fine hierarchy makes the generation process intuitive and interpretable. We pre-train our model with the proposed progressive insertion-based objective on a 12GB Wikipedia dataset, and fine-tune it on downstream hard-constrained generation tasks. Non-autoregressive decoding yields a logarithmic time complexity during inference time. Experimental results on both News and Yelp datasets demonstrate that Pointer achieves state-of-the-art performance on constrained text generation. We released the pre-trained models and the source code to facilitate future research.",
+}
+
+@inproceedings{he_emnlp21_CBART,
+    title = "Parallel Refinements for Lexically Constrained Text Generation with {BART}",
+    author = "He, Xingwei",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.681",
+    doi = "10.18653/v1/2021.emnlp-main.681",
+    pages = "8653--8666",
+    abstract = "Lexically constrained text generation aims to control the generated text by incorporating certain pre-specified keywords into the output. Previous work injects lexical constraints into the output by controlling the decoding process or refining the candidate output iteratively, which tends to generate generic or ungrammatical sentences, and has high computational complexity. To address these challenges, we proposed Constrained BART (CBART) for lexically constrained text generation. CBART leverages the pre-trained model, BART and transfers part of the generation burden from the decoder to the encoder by decomposing this task into two sub-tasks, thereby improving the sentence quality. Concretely, we extended BART by adding a token-level classifier over the encoder, aiming at instructing the decoder where to replace and insert. Guided by the encoder, the decoder refines multiple tokens of the input in one step by inserting tokens before specific positions and re-predicting tokens at a low confidence level. To further reduce the inference latency, the decoder predicts all tokens in parallel. Experiment results on One-Billion-Word and Yelp show that CBART can generate plausible text with high quality and diversity while largely accelerating inference.",
+}
+
+@inproceedings{hua_emnlp20_PAIR,
+    title = "{PAIR}: Planning and Iterative Refinement in Pre-trained Transformers for Long Text Generation",
+    author = "Hua, Xinyu  and
+      Wang, Lu",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.57",
+    doi = "10.18653/v1/2020.emnlp-main.57",
+    pages = "781--793",
+    abstract = "Pre-trained Transformers have enabled impressive breakthroughs in generating long and fluent text, yet their outputs are often {``}rambling{''} without coherently arranged content. In this work, we present a novel content-controlled text generation framework, PAIR, with planning and iterative refinement, which is built upon a large model, BART. We first adapt the BERT model to automatically construct the content plans, consisting of keyphrase assignments and their corresponding sentence-level positions. The BART model is employed for generation without modifying its structure. We then propose a refinement algorithm to gradually enhance the generation quality within the sequence-to-sequence framework. Evaluation with automatic metrics shows that adding planning consistently improves the generation quality on three distinct domains, with an average of 20 BLEU points and 12 METEOR points improvements. In addition, human judges rate our system outputs to be more relevant and coherent than comparisons without planning.",
+}
+
+@inproceedings{gong_icftic22_ETGHC,
+  author={Gong, Zhenkai and Li, Bicheng},
+  booktitle={2022 4th International Conference on Frontiers Technology of Information and Computer (ICFTIC)}, 
+  title={Emotional Text Generation with Hard Constraints}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={68-73},
+  keywords={Analytical models;Sentiment analysis;Computational modeling;Natural languages;Transformers;Data mining;Task analysis;component;text generation;pre-trained language model;hard-constrained;aspect-based sentiment},
+  doi={10.1109/ICFTIC57696.2022.10075091}
+}
+
+@inproceedings{jinran_ccl23_CE,
+    title = "Lexical Complexity Controlled Sentence Generation for Language Learning",
+    author = "Jinran, Nie  and
+      Liner, Yang  and
+      Yun, Chen  and
+      Cunliang, Kong  and
+      Junhui, Zhu  and
+      Erhong, Yang",
+    editor = "Sun, Maosong  and
+      Qin, Bing  and
+      Qiu, Xipeng  and
+      Jiang, Jing  and
+      Han, Xianpei",
+    booktitle = "Proceedings of the 22nd Chinese National Conference on Computational Linguistics",
+    month = aug,
+    year = "2023",
+    address = "Harbin, China",
+    publisher = "Chinese Information Processing Society of China",
+    url = "https://aclanthology.org/2023.ccl-1.56",
+    pages = "648--664",
+    abstract = "{``}Language teachers spend a lot of time developing good examples for language learners. For this reason, we define a new task for language learning, lexical complexity controlledsentence generation, which requires precise control over the lexical complexity in thekeywords to examples generation and better fluency and semantic consistency. The chal-lenge of this task is to generate fluent sentences only using words of given complexitylevels. We propose a simple but effective approach for this task based on complexityembedding while controlling sentence length and syntactic complexity at the decodingstage. Compared with potential solutions, our approach fuses the representations of theword complexity levels into the model to get better control of lexical complexity. Andwe demonstrate the feasibility of the approach for both training models from scratch andfine-tuning the pre-trained models. To facilitate the research, we develop two datasetsin English and Chinese respectively, on which extensive experiments are conducted. Ex-perimental results show that our approach provides more precise control over lexicalcomplexity, as well as better fluency and diversity.{''}",
+    language = "English",
+}
+
+@article{zheng_aaai20_Personalized-Dialogue,
+  title={A Pre-Training Based Personalized Dialogue Generation Model with Persona-Sparse Data},
+  author={Zheng, Yinhe and Zhang, Rongsheng and Huang, Minlie and Mao, Xiaoxi},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={34},
+  number={05},
+  pages={9693-9700},
+  year={2020},
+  month={Apr.},
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/6518},
+  DOI={10.1609/aaai.v34i05.6518},
+  abstract={Endowing dialogue systems with personas is essential to deliver more human-like conversations. However, this problem is still far from well explored due to the difficulties of both embodying personalities in natural languages and the persona sparsity issue observed in most dialogue corpora. This paper proposes a pre-training based personalized dialogue model that can generate coherent responses using persona-sparse dialogue data. In this method, a pre-trained language model is used to initialize an encoder and decoder, and personal attribute embeddings are devised to model richer dialogue contexts by encoding speakers’ personas together with dialogue histories. Further, to incorporate the target persona in the decoding process and to balance its contribution, an attention routing structure is devised in the decoder to merge features extracted from the target persona and dialogue contexts using dynamically predicted weights. Our model can utilize persona-sparse dialogues in a unified manner during the training process, and can also control the amount of persona-related features to exhibit during the inference process. Both automatic and manual evaluation demonstrates that the proposed model outperforms state-of-the-art methods for generating more coherent and persona consistent responses with persona-sparse data.}
+}
+
+@inproceedings{zeng_-naacl21_MultiT-C-Dialog,
+    title = "A Simple and Efficient Multi-Task Learning Approach for Conditioned Dialogue Generation",
+    author = "Zeng, Yan  and
+      Nie, Jian-Yun",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.392",
+    doi = "10.18653/v1/2021.naacl-main.392",
+    pages = "4927--4939",
+    abstract = "Conditioned dialogue generation suffers from the scarcity of labeled responses. In this work, we exploit labeled non-dialogue text data related to the condition, which are much easier to collect. We propose a multi-task learning approach to leverage both labeled dialogue and text data. The 3 tasks jointly optimize the same pre-trained Transformer {--} conditioned dialogue generation task on the labeled dialogue data, conditioned language encoding task and conditioned language generation task on the labeled text data. Experimental results show that our approach outperforms the state-of-the-art models by leveraging the labeled texts, and it also obtains larger improvement in performance comparing to the previous methods to leverage text data.",
+}
+
+@inproceedings{wang_coling22_CHAE,
+    title = "{CHAE}: Fine-Grained Controllable Story Generation with Characters, Actions and Emotions",
+    author = "Wang, Xinpeng  and
+      Jiang, Han  and
+      Wei, Zhihua  and
+      Zhou, Shanlin",
+    editor = "Calzolari, Nicoletta  and
+      Huang, Chu-Ren  and
+      Kim, Hansaem  and
+      Pustejovsky, James  and
+      Wanner, Leo  and
+      Choi, Key-Sun  and
+      Ryu, Pum-Mo  and
+      Chen, Hsin-Hsi  and
+      Donatelli, Lucia  and
+      Ji, Heng  and
+      Kurohashi, Sadao  and
+      Paggio, Patrizia  and
+      Xue, Nianwen  and
+      Kim, Seokhwan  and
+      Hahm, Younggyun  and
+      He, Zhong  and
+      Lee, Tony Kyungil  and
+      Santus, Enrico  and
+      Bond, Francis  and
+      Na, Seung-Hoon",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.559",
+    pages = "6426--6435",
+    abstract = "Story generation has emerged as an interesting yet challenging NLP task in recent years. Some existing studies aim at generating fluent and coherent stories from keywords and outlines; while others attempt to control the global features of the story, such as emotion, style and topic. However, these works focus on coarse-grained control on the story, neglecting control on the details of the story, which is also crucial for the task. To fill the gap, this paper proposes a model for fine-grained control on the story, which allows the generation of customized stories with characters, corresponding actions and emotions arbitrarily assigned. Extensive experimental results on both automatic and human manual evaluations show the superiority of our method. It has strong controllability to generate stories according to the fine-grained personalized guidance, unveiling the effectiveness of our methodology. Our code is available at \url{https://github.com/victorup/CHAE}.",
+}
+
+@inproceedings{cho_www22_SCSC,
+    author = {Cho, JinUk and Jeong, MinSu and Bak, JinYeong and Cheong, Yun-Gyung},
+    title = {Genre-Controllable Story Generation via Supervised Contrastive Learning},
+    year = {2022},
+    isbn = {9781450390965},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3485447.3512004},
+    doi = {10.1145/3485447.3512004},
+    abstract = {While controllable text generation has received attention due to the recent advances in large-scale pre-trained language models, there is a lack of research that focuses on story-specific controllability. To address this, we present Story Control via Supervised Contrastive learning model (SCSC), to create a story conditioned on genre. For this, we design a supervised contrastive objective combined with log-likelihood objective, to capture the intrinsic differences among the stories in different genres. The results of our automated evaluation and user study demonstrate that the proposed method is effective in genre-controlled story generation.},
+    booktitle = {Proceedings of the ACM Web Conference 2022},
+    pages = {2839–2849},
+    numpages = {11},
+    keywords = {automated story generation, contrastive learning, controllable text generation, natural language generation},
+    location = {Virtual Event, Lyon, France},
+    series = {WWW '22}
+}
+
+@misc{kalpakchi_arxiv23_SweCTRL-Mini,
+      title={SweCTRL-Mini: a data-transparent Transformer-based large language model for controllable text generation in Swedish}, 
+      author={Dmytro Kalpakchi and Johan Boye},
+      year={2023},
+      eprint={2304.13994},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2304.13994}, 
+}

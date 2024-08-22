@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Summary of Fine-Tuning (FT) Research Directions}
+\label{tab:fine_tuning}
+\renewcommand{\arraystretch}{1.6} % 调整行距
+\footnotesize
+\begin{tabular}{p{0.13\textwidth}p{0.22\textwidth}p{0.55\textwidth}}
+\hline
+\textbf{Category}                                  & \textbf{Research Direction}                            & \textbf{Methods}                                                           \\ \hline
+\multirow{1}{*}{\makecell[l]{\textbf{Adapter-Based}\\ \textbf{Fine-Tuning}}}      & \makecell[l]{Adapter Construction\\ and Optimization}                  & Auxiliary Tuning\cite{zeldes_arxiv20_AuxiliaryTuning} (2020), DisCup\cite{zhang_emnlp22_discup} (2022), LiFi\cite{shi_arxiv24_LiFi} (2024)                       \\ \hline
+\multirow{4}{*}{\makecell[l]{\textbf{Data-Driven}\\ \textbf{Fine-Tuning}}}  & \makecell[l]{Instruction Dataset\\ Construction}                       & FLAN\cite{wei_iclr22_FLAN} (2022), InstructCTG\cite{zhou_icml23_InstructCTG} (2023), REI\cite{zheng_aacl23_REI} (2023)                               \\ \cline{2-3} 
+                                                   & \makecell[l]{Contrastive\\ Learning}                                   & CHRT\cite{kumar_acl23_CHRT} (2023), Click\cite{zheng_acl23_Click} (2023), CP\cite{klein_arxiv24_CP} (2024)                                      \\ \cline{2-3} 
+                                                   & \makecell[l]{Data\\ Augmentation}                                      & DuNST\cite{feng_acl23_DuNST} (2023), CoDa\cite{evuru_arxiv24_CoDa} (2024), CTGGAN\cite{yang_2024_CTGGAN} (2024)                                  \\ \cline{2-3} 
+                                                   & \makecell[l]{Multi-Attribute\\ Generation}                             & DCG\cite{zeng_acl23_DCG} (2023), CLMI\cite{kangaslahti_arxiv24_CLMI} (2024)                                                   \\ \hline
+\end{tabular}
+\end{table}

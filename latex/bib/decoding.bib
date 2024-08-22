@@ -1,0 +1,947 @@
+@inproceedings{dathathri_iclr20_PPLM,
+    title={Plug and Play Language Models: A Simple Approach to Controlled Text Generation},
+    author={Sumanth Dathathri and Andrea Madotto and Janice Lan and Jane Hung and Eric Frank and Piero Molino and Jason Yosinski and Rosanne Liu},
+    booktitle={International Conference on Learning Representations},
+    year={2020},
+    url={https://openreview.net/forum?id=H1edEyBKDS}
+}
+
+@inproceedings{madotto_acl20_PPCM,
+    title = "Plug-and-Play Conversational Models",
+    author = "Madotto, Andrea  and
+      Ishii, Etsuko  and
+      Lin, Zhaojiang  and
+      Dathathri, Sumanth  and
+      Fung, Pascale",
+    editor = "Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.findings-emnlp.219",
+    doi = "10.18653/v1/2020.findings-emnlp.219",
+    pages = "2422--2433",
+    abstract = "There has been considerable progress made towards conversational models that generate coherent and fluent responses; however, this often involves training large language models on large dialogue datasets, such as Reddit. These large conversational models provide little control over the generated responses, and this control is further limited in the absence of annotated conversational datasets for attribute specific generation that can be used for fine-tuning the model. In this paper, we first propose and evaluate plug-and-play methods for controllable response generation, which does not require dialogue specific datasets and does not rely on fine-tuning a large model. While effective, the decoding procedure induces considerable computational overhead, rendering the conversational model unsuitable for interactive usage. To overcome this, we introduce an approach that does not require further computation at decoding time, while also does not require any fine-tuning of a large language model. We demonstrate, through extensive automatic and human evaluation, a high degree of control over the generated conversational responses with regard to multiple desired attributes, while being fluent.",
+}
+
+@inproceedings{yang_acl21_fudge,
+    title = "{FUDGE}: Controlled Text Generation With Future Discriminators",
+    author = "Yang, Kevin  and
+      Klein, Dan",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.276",
+    doi = "10.18653/v1/2021.naacl-main.276",
+    pages = "3511--3535",
+    abstract = "We propose Future Discriminators for Generation (FUDGE), a flexible and modular method for controlled text generation. Given a pre-existing model G for generating text from a distribution of interest, FUDGE enables conditioning on a desired attribute a (for example, formality) while requiring access only to G{'}s output logits. FUDGE learns an attribute predictor operating on a partial sequence, and uses this predictor{'}s outputs to adjust G{'}s original probabilities. We show that FUDGE models terms corresponding to a Bayesian decomposition of the conditional distribution of G given attribute a. Moreover, FUDGE can easily compose predictors for multiple desired attributes. We evaluate FUDGE on three tasks {---} couplet completion in poetry, topic control in language generation, and formality change in machine translation {---} and observe gains in all three tasks.",
+}
+
+@misc{sitdikov_arxiv22_CAIF,
+      title={Classifiers are Better Experts for Controllable Text Generation}, 
+      author={Askhat Sitdikov and Nikita Balagansky and Daniil Gavrilov and Alexander Markov},
+      year={2022},
+      eprint={2205.07276},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2205.07276}, 
+}
+
+@inproceedings{kim_acl23-CriticControl,
+    title = "Critic-Guided Decoding for Controlled Text Generation",
+    author = "Kim, Minbeom  and
+      Lee, Hwanhee  and
+      Yoo, Kang Min  and
+      Park, Joonsuk  and
+      Lee, Hwaran  and
+      Jung, Kyomin",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.281",
+    doi = "10.18653/v1/2023.findings-acl.281",
+    pages = "4598--4612",
+    abstract = "Steering language generation towards objectives or away from undesired content has been a long-standing goal in utilizing language models (LM). Recent work has demonstrated reinforcement learning and weighted decoding as effective approaches to achieve a higher level of language control and quality with pros and cons. In this work, we propose a novel critic decoding method for controlled language generation (CriticControl) that combines the strengths of reinforcement learning and weighted decoding. Specifically, we adopt the actor-critic framework and train an LM-steering critic from reward models. Similar to weighted decoding, our method freezes the language model and manipulates the output token distribution using a critic to improve training efficiency and stability. Evaluation of our method on three controlled generation tasks, topic control, sentiment control, and detoxification, shows that our approach generates more coherent and well-controlled texts than previous methods. In addition, CriticControl demonstrates superior generalization ability in zero-shot settings. Human evaluation studies also corroborate our findings.",
+}
+
+@inproceedings{deng_acl23_rad,
+    title = "Reward-Augmented Decoding: Efficient Controlled Text Generation With a Unidirectional Reward Model",
+    author = "Deng, Haikang  and
+      Raffel, Colin",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.721",
+    doi = "10.18653/v1/2023.emnlp-main.721",
+    pages = "11781--11791",
+    abstract = "While large language models have proven effective in a huge range of downstream applications, they often generate text that is problematic or lacks a desired attribute. In this paper, we introduce Reward-Augmented Decoding (RAD), a text generation procedure that uses a small unidirectional reward model to encourage a language model to generate text that has certain properties. Specifically, RAD uses the reward model to score generations as they are produced and rescales sampling probabilities to favor high-reward tokens. By using a unidirectional reward model, RAD can cache activations from prior generation steps to decrease computational overhead. Through experiments on generating non-toxic and sentiment-controlled text, we demonstrate that RAD performs best among methods that change only the generation procedure and matches the performance of state-of-the-art methods that involve re-training the language model. We further validate that RAD is effective on very large language models while incurring a minimal computational overhead.",
+}
+
+@inproceedings{zhang_acl23_MIL-Decoding,
+    title = "{MIL}-Decoding: Detoxifying Language Models at Token-Level via Multiple Instance Learning",
+    author = "Zhang, Xu  and
+      Wan, Xiaojun",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.11",
+    doi = "10.18653/v1/2023.acl-long.11",
+    pages = "190--202",
+    abstract = "Despite advances in large pre-trained neural language models, they are prone to generating toxic language, which brings security risks to their applications. We introduce MIL-Decoding, which detoxifies language models at token-level by interpolating it with a trained multiple instance learning (MIL) network.MIL model is trained on a corpus with a toxicity label for each text to predict the overall toxicity and the toxicity of each token in its context. Intuitively, the MIL network computes a toxicity distribution over next tokens according to the generated context which supplements the original language model to avoid toxicity. We evaluate MIL-Decoding with automatic metrics and human evaluation, where MIL-Decoding outperforms other baselines in detoxification while it only hurts generation fluency a little bit.",
+}
+@misc{cao_arxiv23_SF-GEN,
+      title={Successor Features for Efficient Multisubject Controlled Text Generation}, 
+      author={Meng Cao and Mehdi Fatemi and Jackie Chi Kit Cheung and Samira Shabanian},
+      year={2023},
+      eprint={2311.04921},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2311.04921}, 
+}
+
+@inproceedings{landsman_acl22_beamr,
+    title = "{B}eam{R}: Beam Reweighing with Attribute Discriminators for Controllable Text Generation",
+    author = "Landsman, David  and
+      Chen, Jerry Zikun  and
+      Zaidi, Hussain",
+    editor = "He, Yulan  and
+      Ji, Heng  and
+      Li, Sujian  and
+      Liu, Yang  and
+      Chang, Chua-Hui",
+    booktitle = "Findings of the Association for Computational Linguistics: AACL-IJCNLP 2022",
+    month = nov,
+    year = "2022",
+    address = "Online only",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-aacl.40",
+    pages = "422--437",
+    abstract = "Recent advances in natural language processing have led to the availability of large pre-trained language models (LMs), with rich generative capabilities. Although these models are able to produce fluent and coherent text, it remains a challenge to control various attributes of the generation, including sentiment, formality, topic and many others. We propose a Beam Reweighing (BeamR) method, building on top of standard beam search, in order to control different attributes. BeamR combines any generative LM with any attribute discriminator, offering full flexibility of generation style and attribute, while the beam search backbone maintains fluency across different domains. Notably, BeamR allows practitioners to leverage pre-trained models without the need to train generative LMs together with discriminators. We evaluate BeamR in two diverse tasks: sentiment steering, and machine translation formality. Our results show that BeamR performs on par with or better than existing state-of-the-art approaches (including fine-tuned methods), and highlight the flexiblity of BeamR in both causal and seq2seq language modeling tasks.",
+}
+
+@inproceedings{lu_acl21_neurologic,
+    title = "{N}euro{L}ogic Decoding: (Un)supervised Neural Text Generation with Predicate Logic Constraints",
+    author = "Lu, Ximing  and
+      West, Peter  and
+      Zellers, Rowan  and
+      Le Bras, Ronan  and
+      Bhagavatula, Chandra  and
+      Choi, Yejin",
+    editor = "Toutanova, Kristina  and
+      Rumshisky, Anna  and
+      Zettlemoyer, Luke  and
+      Hakkani-Tur, Dilek  and
+      Beltagy, Iz  and
+      Bethard, Steven  and
+      Cotterell, Ryan  and
+      Chakraborty, Tanmoy  and
+      Zhou, Yichao",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.339",
+    doi = "10.18653/v1/2021.naacl-main.339",
+    pages = "4288--4299",
+    abstract = "Conditional text generation often requires lexical constraints, i.e., which words should or shouldn{'}t be included in the output text. While the dominant recipe for conditional text generation has been large-scale pretrained language models that are finetuned on the task-specific training data, such models do not learn to follow the underlying constraints reliably, even when supervised with large amounts of task-specific examples. We propose NeuroLogic Decoding, a simple yet effective algorithm that enables neural language models {--} supervised or not {--} to generate fluent text while satisfying complex lexical constraints. Our approach is powerful yet efficient. It handles any set of lexical constraints that is expressible under predicate logic, while its asymptotic runtime is equivalent to conventional beam search. Empirical results on four benchmarks show that NeuroLogic Decoding outperforms previous approaches, including algorithms that handle a subset of our constraints. Moreover, we find that unsupervised models with NeuroLogic Decoding often outperform supervised models with conventional decoding, even when the latter is based on considerably larger networks. Our results suggest the limit of large-scale neural networks for fine-grained controllable generation and the promise of inference-time algorithms.",
+}
+
+@inproceedings{lu_acl22-neurologic-AFesque,
+    title = "{N}euro{L}ogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics",
+    author = "Lu, Ximing  and
+      Welleck, Sean  and
+      West, Peter  and
+      Jiang, Liwei  and
+      Kasai, Jungo  and
+      Khashabi, Daniel  and
+      Le Bras, Ronan  and
+      Qin, Lianhui  and
+      Yu, Youngjae  and
+      Zellers, Rowan  and
+      Smith, Noah A.  and
+      Choi, Yejin",
+    editor = "Carpuat, Marine  and
+      de Marneffe, Marie-Catherine  and
+      Meza Ruiz, Ivan Vladimir",
+    booktitle = "Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jul,
+    year = "2022",
+    address = "Seattle, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.naacl-main.57",
+    doi = "10.18653/v1/2022.naacl-main.57",
+    pages = "780--799",
+    abstract = "The dominant paradigm for neural text generation is left-to-right decoding from autoregressive language models. Constrained or controllable generation under complex lexical constraints, however, requires foresight to plan ahead feasible future paths. Drawing inspiration from the $A^*$ search algorithm, we propose NeuroLogic A*esque, a decoding algorithm that incorporates heuristic estimates of future cost. We develop lookahead heuristics that are efficient for large-scale language models, making our method a drop-in replacement for common techniques such as beam search and top-$k$ sampling. To enable constrained generation, we build on NeuroLogic decoding (Lu et al., 2021), combining its flexibility in incorporating logical constraints with A*esque estimates of future constraint satisfaction. Our approach outperforms competitive baselines on five generation tasks, and achieves new state-of-the-art performance on table-to-text generation, constrained machine translation, and keyword-constrained generation. The improvements are particularly notable on tasks that require complex constraint satisfaction or in few-shot or zero-shot settings. NeuroLogic A*esque illustrates the power of decoding for improving and enabling new capabilities of large-scale language models.",
+}
+
+@inproceedings{mudgal_nips23_Controlled-Decoding,
+    title={Controlled Decoding from Language Models},
+    author={Sidharth Mudgal and Jong Lee and Harish Ganapathy and YaGuang Li and Tao Wang and Yanping Huang and Zhifeng Chen and Heng-Tze Cheng and Michael Collins and Jilin Chen and Alex Beutel and Ahmad Beirami},
+    booktitle={Socially Responsible Language Modelling Research},
+    year={2023},
+    url={https://openreview.net/forum?id=jo57H1CpD8}
+}
+
+@inproceedings{liang_arxiv24_DATG,
+    title = "Controlled Text Generation for Large Language Model with Dynamic Attribute Graphs",
+    author = "Liang, Xun  and
+      Wang, Hanyu  and
+      Song, Shichao  and
+      Hu, Mengting  and
+      Wang, Xunzhi  and
+      Li, Zhiyu  and
+      Xiong, Feiyu  and
+      Tang, Bo",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.345",
+    pages = "5797--5814",
+    abstract = "Controlled Text Generation (CTG) aims to produce texts that exhibit specific desired attributes. In this study, we introduce a pluggable CTG framework for Large Language Models (LLMs) named Dynamic Attribute Graphs-based controlled text generation (DATG). This framework utilizes an attribute scorer to evaluate the attributes of sentences generated by LLMs and constructs dynamic attribute graphs. DATG modulates the occurrence of key attribute words and key anti-attribute words, achieving effective attribute control without compromising the original capabilities of the model. We conduct experiments across four datasets in two tasks: toxicity mitigation and sentiment transformation, employing five LLMs as foundational models. Our findings highlight a remarkable enhancement in control accuracy, achieving a peak improvement of 19.29{\%} over baseline methods in the most favorable task across four datasets. Additionally, we observe a significant decrease in perplexity, markedly improving text fluency.",
+}
+
+@inproceedings{gu_acl22-CAT-PAW,
+    title = "Improving Controllable Text Generation with Position-Aware Weighted Decoding",
+    author = "Gu, Yuxuan  and
+      Feng, Xiaocheng  and
+      Ma, Sicheng  and
+      Wu, Jiaming  and
+      Gong, Heng  and
+      Qin, Bing",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.272",
+    doi = "10.18653/v1/2022.findings-acl.272",
+    pages = "3449--3467",
+    abstract = "Weighted decoding methods composed of the pretrained language model (LM) and the controller have achieved promising results for controllable text generation. However, these models often suffer from a control strength/fluency trade-off problem as higher control strength is more likely to generate incoherent and repetitive text. In this paper, we illustrate this trade-off is arisen by the controller imposing the target attribute on the LM at improper positions. And we propose a novel framework based on existing weighted decoding methods called CAT-PAW, which introduces a lightweight regulator to adjust bias signals from the controller at different decoding positions. Experiments on positive sentiment control, topic control, and language detoxification show the effectiveness of our CAT-PAW upon 4 SOTA models.",
+}
+
+@misc{liu_arxiv22_Gemini,
+      title={Bridging the Gap Between Training and Inference of Bayesian Controllable Language Models}, 
+      author={Han Liu and Bingning Wang and Ting Yao and Haijin Liang and Jianjin Xu and Xiaolin Hu},
+      year={2022},
+      eprint={2206.05519},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2206.05519}, 
+}
+
+@inproceedings{meng_NIPS22_NADO,
+    author = {Meng, Tao and Lu, Sidi and Peng, Nanyun and Chang, Kai-Wei},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+    pages = {28125--28139},
+    publisher = {Curran Associates, Inc.},
+    title = {Controllable Text Generation with Neurally-Decomposed Oracle},
+    url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/b40d5797756800c97f3d525c2e4c8357-Paper-Conference.pdf},
+    volume = {35},
+    year = {2022}
+}
+
+@misc{xu_arxiv24_DECIDER,
+      title={DECIDER: A Dual-System Rule-Controllable Decoding Framework for Language Generation}, 
+      author={Chen Xu and Tian Lan and Changlong Yu and Wei Wang and Jun Gao and Yu Ji and Qunxi Dong and Kun Qian and Piji Li and Wei Bi and Bin Hu},
+      year={2024},
+      eprint={2403.01954},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2403.01954}, 
+}
+
+@inproceedings{zheng_acl23_ILC,
+    title = "An Invariant Learning Characterization of Controlled Text Generation",
+    author = "Zheng, Carolina  and
+      Shi, Claudia  and
+      Vafa, Keyon  and
+      Feder, Amir  and
+      Blei, David",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.179",
+    doi = "10.18653/v1/2023.acl-long.179",
+    pages = "3186--3206",
+    abstract = "Controlled generation refers to the problem of creating text that contains stylistic or semantic attributes of interest. Many approaches reduce this problem to training a predictor of the desired attribute. For example, researchers hoping to deploy a large language model to produce non-toxic content may use a toxicity classifier to filter generated text. In practice, the generated text to classify, which is determined by user prompts, may come from a wide range of distributions. In this paper, we show that the performance of controlled generation may be poor if the distributions of text in response to user prompts differ from the distribution the predictor was trained on. To address this problem, we cast controlled generation under distribution shift as an invariant learning problem: the most effective predictor should be invariant across multiple text environments. We then discuss a natural solution that arises from this characterization and propose heuristics for selecting natural environments. We study this characterization and the proposed method empirically using both synthetic and real data. Experiments demonstrate both the challenge of distribution shift in controlled generation and the potential of invariance methods in this setting.",
+}
+
+@inproceedings{spangher_acl22_SeqCTG,
+    title = "Sequentially Controlled Text Generation",
+    author = "Spangher, Alexander  and
+      Ming, Yao  and
+      Hua, Xinyu  and
+      Peng, Nanyun",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.509",
+    doi = "10.18653/v1/2022.findings-emnlp.509",
+    pages = "6848--6866",
+    abstract = "While GPT-2 generates sentences that are remarkably human-like, longer documents can ramble and do not follow human-like writing structure. We study the problem of imposing structure on long-range text. We propose a novel controlled text generation task, sequentially controlled text generation, and identify a dataset, NewsDiscourse as a starting point for this task. We develop a sequential controlled text generation pipeline with generation and editing. We test different degrees of structural awareness and show that, in general, more structural awareness results in higher control- accuracy, grammaticality, coherency and topicality, approaching human-level writing performance.",
+}
+
+@inproceedings{liu_acl22_RecipeWithPlans,
+    title = "Plug-and-Play Recipe Generation with Content Planning",
+    author = "Liu, Yinhong  and
+      Su, Yixuan  and
+      Shareghi, Ehsan  and
+      Collier, Nigel",
+    editor = "Bosselut, Antoine  and
+      Chandu, Khyathi  and
+      Dhole, Kaustubh  and
+      Gangal, Varun  and
+      Gehrmann, Sebastian  and
+      Jernite, Yacine  and
+      Novikova, Jekaterina  and
+      Perez-Beltrachini, Laura",
+    booktitle = "Proceedings of the 2nd Workshop on Natural Language Generation, Evaluation, and Metrics (GEM)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.gem-1.19",
+    doi = "10.18653/v1/2022.gem-1.19",
+    pages = "223--234",
+    abstract = "Recent pre-trained language models have shown promising capability to generate fluent and realistic natural text. However, generating multi-sentence text with global content planning has been a long-existing research question. The current controlled text generation models cannot directly address this issue, as they usually condition on single known control attribute. We propose a low-cost yet effective framework that explicitly models content plans and optimizes the joint distribution of the natural sequence and the content plans in a plug-and-play post-processing manner. We evaluate our model with extensive automatic metrics and human evaluations and show that it achieves the state-of-the-art performance on the recipe generation task on Recipe1M+ dataset.",
+}
+
+@inproceedings{jansen_acl22_Age-Adapted,
+    title = "Controllable Text Generation for All Ages: Evaluating a Plug-and-Play Approach to Age-Adapted Dialogue",
+    author = "Jansen, Lennert  and
+      Laichter, {\v{S}}t{\v{e}}p{\'a}n Lars  and
+      Sinclair, Arabella  and
+      van der Goot, Margot  and
+      Fernandez, Raquel  and
+      Pezzelle, Sandro",
+    editor = "Bosselut, Antoine  and
+      Chandu, Khyathi  and
+      Dhole, Kaustubh  and
+      Gangal, Varun  and
+      Gehrmann, Sebastian  and
+      Jernite, Yacine  and
+      Novikova, Jekaterina  and
+      Perez-Beltrachini, Laura",
+    booktitle = "Proceedings of the 2nd Workshop on Natural Language Generation, Evaluation, and Metrics (GEM)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.gem-1.14",
+    doi = "10.18653/v1/2022.gem-1.14",
+    pages = "172--188",
+    abstract = "To be trusted and perceived as natural and coherent, conversational systems must adapt to the language of their users. While personalized dialogue is a promising direction, controlling generation for fine-grained language features remains a challenge in this approach. A recent line of research showed the effectiveness of leveraging pre-trained language models toward adapting to a text{'}s topic or sentiment. In this study, we build on these approaches and focus on a higher-level dimension of language variation: speakers{'} age. We frame the task as a dialogue response generation, and test methods based on bag-of-words (BoW) and neural discriminators (Disc) to condition the output of GPT-2 and DialoGPT without altering the parameters of the language models. We show that Disc models achieve a higher degree of detectable control than BoW models based on automatic evaluation. In contrast, humans can partially detect age differences in BoW but not Disc responses. Since BoW responses are deemed better than Disc ones by humans, simple controllable methods thus appear to be a better tradeoff between adaptation and language quality. Our work confirms the challenges of adapting to higher-level dimensions of language variation. Moreover, it highlights the need to evaluate natural language generation thoroughly.",
+}
+
+@InProceedings{Vychegzhanin_2024_PMCSG,
+    author="Vychegzhanin, Sergey
+    and Kotelnikova, Anastasia
+    and Sergeev, Alexander
+    and Kotelnikov, Evgeny",
+    editor="Ignatov, Dmitry I.
+    and Khachay, Michael
+    and Kutuzov, Andrey
+    and Madoyan, Habet
+    and Makarov, Ilya
+    and Nikishina, Irina
+    and Panchenko, Alexander
+    and Panov, Maxim
+    and Pardalos, Panos M.
+    and Savchenko, Andrey V.
+    and Tsymbalov, Evgenii
+    and Tutubalina, Elena
+    and Zagoruyko, Sergey",
+    title="Controllable Story Generation Based on Perplexity Minimization",
+    booktitle="Analysis of Images, Social Networks and Texts",
+    year="2024",
+    publisher="Springer Nature Switzerland",
+    address="Cham",
+    pages="154--169",
+    abstract="Large-scale pre-trained language models have demonstrated impressive results in producing human-like texts. However, controlling the text generation process remains a challenge for researchers. Controllable text generation consists of generating sentences that satisfy desired constraints (e.g., sentiment, topic, or keywords). Recent studies that control the decoding stage of a language model have proved the high efficiency of this approach for control of generated texts. This approach, in contrast to the fine-tuning of pre-trained language models, requires much less computing resources. In this work, we propose and investigate a method that controls the process of language generation using perplexity minimization. The method is designed to create stories from a sequence of guide phrases that form a storyline and is based on the search for sequences of tokens that reduce text perplexity when generation is directed towards the guide phrase. First, we generate several arbitrary small sequences of tokens from the language model vocabulary. Then we choose the most probable subsequence - the one, the probability of following the guide phrase after which is the biggest. The proposed method induces the model to shift the content of the generated text to the guide phrase. Experiments on the Russian-language corpus of fairy tales with storylines have shown the high efficiency of the proposed method for creating stories corresponding to the user-specified storyline.",
+    isbn="978-3-031-54534-4"
+}
+
+@inproceedings{Vychegzhanin_arxiv22_Collocation2Text,
+   title={Collocation2Text: Controllable Text Generation from Guide Phrases in Russian},
+   url={http://dx.doi.org/10.28995/2075-7182-2022-21-564-576},
+   DOI={10.28995/2075-7182-2022-21-564-576},
+   booktitle={Computational Linguistics and Intellectual Technologies},
+   publisher={RSUH},
+   author={Vychegzhanin, S. V. and Kotelnikov, E. V.},
+   year={2022},
+   month=jun }
+
+@inproceedings{krause_emnlp21_gedi,
+    title = "{G}e{D}i: Generative Discriminator Guided Sequence Generation",
+    author = "Krause, Ben  and
+      Gotmare, Akhilesh Deepak  and
+      McCann, Bryan  and
+      Keskar, Nitish Shirish  and
+      Joty, Shafiq  and
+      Socher, Richard  and
+      Rajani, Nazneen Fatema",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.424",
+    doi = "10.18653/v1/2021.findings-emnlp.424",
+    pages = "4929--4952",
+    abstract = "",
+}
+
+@inproceedings{saha_ijcai22_CounterGeDi,
+  title     = {CounterGeDi: A Controllable Approach to Generate Polite, Detoxified and Emotional Counterspeech},
+  author    = {Saha, Punyajoy and Singh, Kanishk and Kumar, Adarsh and Mathew, Binny and Mukherjee, Animesh},
+  booktitle = {Proceedings of the Thirty-First International Joint Conference on
+               Artificial Intelligence, {IJCAI-22}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Lud De Raedt},
+  pages     = {5157--5163},
+  year      = {2022},
+  month     = {7},
+  note      = {AI for Good},
+  doi       = {10.24963/ijcai.2022/716},
+  url       = {https://doi.org/10.24963/ijcai.2022/716},
+}
+
+@inproceedings{liu_acl21_DExperts,
+    title = "{DE}xperts: Decoding-Time Controlled Text Generation with Experts and Anti-Experts",
+    author = "Liu, Alisa  and
+      Sap, Maarten  and
+      Lu, Ximing  and
+      Swayamdipta, Swabha  and
+      Bhagavatula, Chandra  and
+      Smith, Noah A.  and
+      Choi, Yejin",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.522",
+    doi = "10.18653/v1/2021.acl-long.522",
+    pages = "6691--6706",
+    abstract = "Despite recent advances in natural language generation, it remains challenging to control attributes of generated text. We propose DExperts: Decoding-time Experts, a decoding-time method for controlled text generation that combines a pretrained language model with {``}expert{''} LMs and/or {``}anti-expert{''} LMs in a product of experts. Intuitively, under the ensemble, tokens only get high probability if they are considered likely by the experts, and unlikely by the anti-experts. We apply DExperts to language detoxification and sentiment-controlled generation, where we outperform existing controllable generation methods on both automatic and human evaluations. Moreover, because DExperts operates only on the output of the pretrained LM, it is effective with (anti-)experts of smaller size, including when operating on GPT-3. Our work highlights the promise of tuning small LMs on text with (un)desirable attributes for efficient decoding-time steering.",
+}
+
+@inproceedings{hallinan_acl23_MARCO,
+    title = "Detoxifying Text with {M}a{RC}o: Controllable Revision with Experts and Anti-Experts",
+    author = "Hallinan, Skyler  and
+      Liu, Alisa  and
+      Choi, Yejin  and
+      Sap, Maarten",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.21",
+    doi = "10.18653/v1/2023.acl-short.21",
+    pages = "228--242",
+    abstract = "Text detoxification has the potential to mitigate the harms of toxicity by rephrasing text to remove offensive meaning, but subtle toxicity remains challenging to tackle. We introduce MaRCo, a detoxification algorithm that combines controllable generation and text rewriting methods using a Product of Experts with autoencoder language models (LMs). MaRCo uses likelihoods under a non-toxic LM (expert) and a toxic LM (anti-expert) to find candidate words to mask and potentially replace. We evaluate our method on several subtle toxicity and microaggressions datasets, and show that it not only outperforms baselines on automatic metrics, but MaRCo{'}s rewrites are preferred 2.1 times more in human evaluation. Its applicability to instances of subtle toxicity is especially promising, demonstrating a path forward for addressing increasingly elusive online hate.",
+}
+
+@inproceedings{zhong_acl23_Air-Decoding,
+    title = "Air-Decoding: Attribute Distribution Reconstruction for Decoding-Time Controllable Text Generation",
+    author = "Zhong, Tianqi  and
+      Wang, Quan  and
+      Han, Jingxuan  and
+      Zhang, Yongdong  and
+      Mao, Zhendong",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.512",
+    doi = "10.18653/v1/2023.emnlp-main.512",
+    pages = "8233--8248",
+    abstract = "Controllable text generation (CTG) aims to generate text with desired attributes, and decoding-time-based methods have shown promising performance on this task. However, in this paper, we identify the phenomenon of Attribute Collapse for the first time. It causes the fluency of generated text to rapidly decrease when the control strength exceeds a critical value, rendering the text completely unusable. This limitation hinders the effectiveness of decoding methods in achieving high levels of controllability. To address this problem, we propose a novel lightweight decoding framework named Air-Decoding. Its main idea is reconstructing the attribute distributions to balance the weights between attribute words and non-attribute words to generate more fluent text. Specifically, we train prefixes by prefix-tuning to obtain attribute distributions. Then we design a novel attribute distribution reconstruction method to balance the obtained distributions and use the reconstructed distributions to guide language models for generation, effectively avoiding the issue of Attribute Collapse. Experiments on multiple CTG tasks prove that our method achieves a new state-of-the-art control performance.",
+}
+
+@inproceedings{dekoninck_iclr24_Arithmetic,
+    title={Controlled Text Generation via Language Model Arithmetic},
+    author={Jasper Dekoninck and Marc Fischer and Luca Beurer-Kellner and Martin Vechev},
+    booktitle={The Twelfth International Conference on Learning Representations},
+    year={2024},
+    url={https://openreview.net/forum?id=SLw9fp4yI6}
+}
+
+@inproceedings{zou_KDD21_Inverse-Prompting,
+author = {Zou, Xu and Yin, Da and Zhong, Qingyang and Yang, Hongxia and Yang, Zhilin and Tang, Jie},
+title = {Controllable Generation from Pre-trained Language Models via Inverse Prompting},
+year = {2021},
+isbn = {9781450383325},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447548.3467418},
+doi = {10.1145/3447548.3467418},
+abstract = {Large-scale pre-trained language models have demonstrated strong capabilities of generating realistic texts. However, it remains challenging to control the generation results. Previous approaches such as prompting are far from sufficient, and lack of controllability limits the usage of language models. To tackle this challenge, we propose an innovative method, inverse prompting, to better control text generation. The core idea of inverse prompting is to use generated text to inversely predict the prompt during beam search, which enhances the relevance between the prompt and the generated text and thus improves controllability. Empirically, we pre-train a large-scale Chinese language model to perform a systematic study using human evaluation on the tasks of open-domain poem generation and open-domain long-form question answering. Results demonstrate that our proposed method substantially outperforms the baselines and that our generation quality is close to human performance on some of the tasks.},
+booktitle = {Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},
+pages = {2450–2460},
+numpages = {11},
+keywords = {poem generation, machine question answering, language modeling, controllable generation, beam search},
+location = {Virtual Event, Singapore},
+series = {KDD '21}
+}
+
+@inproceedings{zhiting_nips21_SCM,
+title={A Causal Lens for Controllable Text Generation},
+author={Zhiting Hu and Li Erran Li},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=kAm9By0R5ME}
+}
+
+@inproceedings{ma_acl23_FPT,
+    title = "Focused Prefix Tuning for Controllable Text Generation",
+    author = "Ma, Congda  and
+      Zhao, Tianyu  and
+      Shing, Makoto  and
+      Sawada, Kei  and
+      Okumura, Manabu",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.96",
+    doi = "10.18653/v1/2023.acl-short.96",
+    pages = "1116--1127",
+    abstract = "In a controllable text generation dataset, there exist unannotated attributes that could provide irrelevant learning signals to models that use it for training and thus degrade their performance. We propose focused prefix tuning (FPT) to mitigate the problem and to enable the control to focus on the desired attribute. Experimental results show that FPT can achieve better control accuracy and text fluency than baseline models in single-attribute control tasks. In multi-attribute control tasks, FPT achieves comparable control accuracy with the state-of-the-art approach while keeping the flexibility to control new attributes without retraining existing models.",
+}
+
+@article{schick_tacl21_SD,
+    title = "Self-Diagnosis and Self-Debiasing: A Proposal for Reducing Corpus-Based Bias in {NLP}",
+    author = {Schick, Timo  and
+      Udupa, Sahana  and
+      Sch{\"u}tze, Hinrich},
+    editor = "Roark, Brian  and
+      Nenkova, Ani",
+    journal = "Transactions of the Association for Computational Linguistics",
+    volume = "9",
+    year = "2021",
+    address = "Cambridge, MA",
+    publisher = "MIT Press",
+    url = "https://aclanthology.org/2021.tacl-1.84",
+    doi = "10.1162/tacl_a_00434",
+    pages = "1408--1424",
+    abstract = "This paper contains prompts and model outputs that are offensive in nature. When trained on large, unfiltered crawls from the Internet, language models pick up and reproduce all kinds of undesirable biases that can be found in the data: They often generate racist, sexist, violent, or otherwise toxic language. As large models require millions of training examples to achieve good performance, it is difficult to completely prevent them from being exposed to such content. In this paper, we first demonstrate a surprising finding: Pretrained language models recognize, to a considerable degree, their undesirable biases and the toxicity of the content they produce. We refer to this capability as self-diagnosis. Based on this finding, we then propose a decoding algorithm that, given only a textual description of the undesired behavior, reduces the probability of a language model producing problematic text. We refer to this approach as self-debiasing. Self-debiasing does not rely on manually curated word lists, nor does it require any training data or changes to the model{'}s parameters. While we by no means eliminate the issue of language models generating biased text, we believe our approach to be an important step in this direction.1",
+}
+
+@inproceedings{pei_acl23_PREADD,
+    title = "{PREADD}: Prefix-Adaptive Decoding for Controlled Text Generation",
+    author = "Pei, Jonathan  and
+      Yang, Kevin  and
+      Klein, Dan",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.636",
+    doi = "10.18653/v1/2023.findings-acl.636",
+    pages = "10018--10037",
+    abstract = "We propose Prefix-Adaptive Decoding (PREADD), a flexible method for controlled text generation. Unlike existing methods that use auxiliary expert models to control for attributes, PREADD does not require an external model, instead relying on linearly combining output logits from multiple prompts. Specifically, PREADD contrasts the output logits generated using a raw prompt against those generated using a prefix-prepended prompt, enabling both positive and negative control with respect to any attribute encapsulated by the prefix. We evaluate PREADD on three tasks{---}toxic output mitigation, gender bias reduction, and sentiment control{---}and find that PREADD outperforms not only prompting baselines, but also an auxiliary-expert control method, by 12{\%} or more in relative gain on our main metrics for each task.",
+}
+
+@misc{chen_arxiv22_COGNACGEN,
+      title={Controllable Text Generation with Language Constraints}, 
+      author={Howard Chen and Huihan Li and Danqi Chen and Karthik Narasimhan},
+      year={2022},
+      eprint={2212.10466},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2212.10466}, 
+}
+
+@misc{zhong_arxiv24_ROSE,
+      title={ROSE Doesn't Do That: Boosting the Safety of Instruction-Tuned Large Language Models with Reverse Prompt Contrastive Decoding}, 
+      author={Qihuang Zhong and Liang Ding and Juhua Liu and Bo Du and Dacheng Tao},
+      year={2024},
+      eprint={2402.11889},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2402.11889}, 
+}
+
+@inproceedings{
+kumar_nips21_MUCOCO,
+title={Controlled Text Generation as Continuous Optimization with Multiple Constraints},
+author={Sachin Kumar and Eric Malmi and Aliaksei Severyn and Yulia Tsvetkov},
+booktitle={Advances in Neural Information Processing Systems},
+editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+year={2021},
+url={https://openreview.net/forum?id=kTy7bbm-4I4}
+}
+
+@inproceedings{kumar_emnlp22_MUCOLA,
+    title = "Gradient-based Constrained Sampling from Language Models",
+    author = "Kumar, Sachin  and
+      Paria, Biswajit  and
+      Tsvetkov, Yulia",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.144",
+    doi = "10.18653/v1/2022.emnlp-main.144",
+    pages = "2251--2277",
+    abstract = "Large pretrained language models are successful at generating fluent text but are notoriously hard to controllably sample from. In this work, we study constrained sampling from such language models, i.e., generating text that satisfies user-defined constraints, while maintaining fluency and model{'}s performance in a downstream task. We propose MuCoLa{---}a sampling procedure that combines the log-likelihood of the language model with arbitrary (differentiable) constraints in a single energy function, and then generates samples in a non-autoregressive manner. Specifically, it initializes the entire output sequence with noise and follows a Markov chain defined by Langevin Dynamics using the gradients of this energy. We evaluate MuCoLa on text generation with soft and hard constraints as well as their combinations, obtaining significant improvements over competitive baselines for toxicity avoidance, sentiment control, and keyword-guided generation.",
+}
+
+@inproceedings{qin_NEURIPS22_COLD,
+ author = {Qin, Lianhui and Welleck, Sean and Khashabi, Daniel and Choi, Yejin},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {9538--9551},
+ publisher = {Curran Associates, Inc.},
+ title = {COLD Decoding: Energy-based Constrained Text Generation with Langevin Dynamics},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/3e25d1aff47964c8409fd5c8dc0438d7-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+
+@misc{guo_arxiv24_ColdAttack,
+      title={COLD-Attack: Jailbreaking LLMs with Stealthiness and Controllability}, 
+      author={Xingang Guo and Fangxu Yu and Huan Zhang and Lianhui Qin and Bin Hu},
+      year={2024},
+      eprint={2402.08679},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2402.08679}, 
+}
+
+@inproceedings{liu_acl23_bolt,
+    title = "{BOLT}: Fast Energy-based Controlled Text Generation with Tunable Biases",
+    author = "Liu, Xin  and
+      Khalifa, Muhammad  and
+      Wang, Lu",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.18",
+    doi = "10.18653/v1/2023.acl-short.18",
+    pages = "186--200",
+    abstract = "Energy-based models (EBMs) have gained popularity for controlled text generation due to their high applicability to a wide range of constraints. However, sampling from EBMs is non-trivial, as it often requires a large number of iterations to converge to plausible text, which slows down the decoding process and makes it less practical for real-world applications. In this work, we propose BOLT, which relies on tunable biases to directly adjust the language model{'}s output logits. Unlike prior work, BOLT maintains the generator{'}s autoregressive nature to assert a strong control on token-wise conditional dependencies and overall fluency, and thus converges faster. When compared with state-of-the-arts on controlled generation tasks using both soft constraints (e.g., sentiment control) and hard constraints (e.g., keyword-guided topic control), BOLT demonstrates significantly improved efficiency and fluency. On sentiment control, BOLT is 7x faster than competitive baselines, and more fluent in 74.4{\%} of the evaluation samples according to human judges.",
+}
+
+@inproceedings{mireshghallah_acl22_mixandmatch,
+    title = "Mix and Match: Learning-free Controllable Text Generationusing Energy Language Models",
+    author = "Mireshghallah, Fatemehsadat  and
+      Goyal, Kartik  and
+      Berg-Kirkpatrick, Taylor",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.31",
+    doi = "10.18653/v1/2022.acl-long.31",
+    pages = "401--415",
+    abstract = "Recent work on controlled text generation has either required attribute-based fine-tuning of the base language model (LM), or has restricted the parameterization of the attribute discriminator to be compatible with the base autoregressive LM. In this work, we propose Mix and Match LM, a global score-based alternative for controllable text generation that combines arbitrary pre-trained black-box models for achieving the desired attributes in the generated text without involving any fine-tuning or structural assumptions about the black-box models. We interpret the task of controllable generation as drawing samples from an energy-based model whose energy values are a linear combination of scores from black-box models that are separately responsible for fluency, the control attribute, and faithfulness to any conditioning context. We use a Metropolis-Hastings sampling scheme to sample from this energy-based model using bidirectional context and global attribute features. We validate the effectiveness of our approach on various controlled generation and style-based text revision tasks by outperforming recently proposed methods that involve extra training, fine-tuning, or restrictive assumptions over the form of models.",
+}
+
+@inproceedings{forristal_conll23_BlockMH,
+    title = "A Block Metropolis-Hastings Sampler for Controllable Energy-based Text Generation",
+    author = "Forristal, Jarad  and
+      Mireshghallah, Fatemehsadat  and
+      Durrett, Greg  and
+      Berg-Kirkpatrick, Taylor",
+    editor = "Jiang, Jing  and
+      Reitter, David  and
+      Deng, Shumin",
+    booktitle = "Proceedings of the 27th Conference on Computational Natural Language Learning (CoNLL)",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.conll-1.26",
+    doi = "10.18653/v1/2023.conll-1.26",
+    pages = "403--413",
+    abstract = "Recent work has shown that energy-based language modeling is an effective framework for controllable text generation because it enables flexible integration of arbitrary discriminators. However, because energy-based LMs are globally normalized, approximate techniques like Metropolis-Hastings (MH) are required for inference. Past work has largely explored simple proposal distributions that modify a single token at a time, like in Gibbs sampling. In this paper, we develop a novel MH sampler that, in contrast, proposes re-writes of the entire sequence in each step via iterative prompting of a large language model. Our new sampler (a) allows for more efficient and accurate sampling from a target distribution and (b) allows generation length to be determined through the sampling procedure rather than fixed in advance, as past work has required. We perform experiments on two controlled generation tasks, showing both downstream performance gains and more accurate target distribution sampling in comparison with single-token proposal techniques.",
+}
+
+@inproceedings{yu_acl24_ScoPE,
+    title = "Controlled Text Generation for Black-box Language Models via Score-based Progressive Editor",
+    author = "Yu, Sangwon  and
+      Lee, Changmin  and
+      Lee, Hojin  and
+      Yoon, Sungroh",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.767",
+    pages = "14215--14237",
+    abstract = "Controlled text generation, aiming to ensure that language models produce text containing only the desired domain or corpus attributes, is immensely crucial in the practical application of language models. Existing methods, however, are inapplicable to black-box models or suffer a significant trade-off between control and fluency in text generation. This paper introduces the Score-based Progressive Editor (ScoPE), a novel approach designed to overcome these issues. ScoPE modifies the context at the token level during the generation process of a backbone language model. This modification guides the subsequent text to naturally include the target attributes. To facilitate this process, ScoPE employs a training objective that maximizes a target score, comprehensively considering both control and fluency. Experimental results on diverse controlled generation tasks demonstrate that ScoPE can effectively regulate the attributes of the generated text while effectively utilizing the capability of the backbone large language models.",
+}
+
+@inproceedings{
+Khandelwal_iclr20_kNN-LM,
+title={Generalization through Memorization: Nearest Neighbor Language Models},
+author={Urvashi Khandelwal and Omer Levy and Dan Jurafsky and Luke Zettlemoyer and Mike Lewis},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=HklBjCEKvH}
+}
+
+@inproceedings{trotta_gem22_kNN-SCG,
+    title = "Nearest Neighbor Language Models for Stylistic Controllable Generation",
+    author = "Trotta, Severino  and
+      Flek, Lucie  and
+      Welch, Charles",
+    editor = "Bosselut, Antoine  and
+      Chandu, Khyathi  and
+      Dhole, Kaustubh  and
+      Gangal, Varun  and
+      Gehrmann, Sebastian  and
+      Jernite, Yacine  and
+      Novikova, Jekaterina  and
+      Perez-Beltrachini, Laura",
+    booktitle = "Proceedings of the 2nd Workshop on Natural Language Generation, Evaluation, and Metrics (GEM)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.gem-1.25",
+    doi = "10.18653/v1/2022.gem-1.25",
+    pages = "295--305",
+    abstract = "Recent language modeling performance has been greatly improved by the use of external memory. This memory encodes the context so that similar contexts can be recalled during decoding. This similarity depends on how the model learns to encode context, which can be altered to include other attributes, such as style. We construct and evaluate an architecture for this purpose, using corpora annotated for politeness, formality, and toxicity. Through extensive experiments and human evaluation we demonstrate the potential of our method to generate text while controlling style. We find that style-specific datastores improve generation performance, though results vary greatly across styles, and the effect of pretraining data and specific styles should be explored in future work.",
+}
+
+@inproceedings{nawezi_tllm23_kNN-CTG,
+    title = "Style Locality for Controllable Generation with k{NN} Language Models",
+    author = "Nawezi, Gilles  and
+      Flek, Lucie  and
+      Welch, Charles",
+    editor = "Hazarika, Devamanyu  and
+      Tang, Xiangru Robert  and
+      Jin, Di",
+    booktitle = "Proceedings of the 1st Workshop on Taming Large Language Models: Controllability in the era of Interactive Assistants!",
+    month = sep,
+    year = "2023",
+    address = "Prague, Czech Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.tllm-1.7",
+    pages = "68--75",
+    abstract = "Recent language models have been improved by the addition of external memory. Nearest neighbor language models retrieve similar contexts to assist in word prediction. The addition of locality levels allows a model to learn how to weight neighbors based on their relative location to the current text in source documents, and have been shown to further improve model performance. Nearest neighbor models have been explored for controllable generation but have not examined the use of locality levels. We present a novel approach for this purpose and evaluate it using automatic and human evaluation on politeness, formality, supportiveness, and toxicity textual data. We find that our model is successfully able to control style and provides a better fluency-style trade-off than previous work",
+}
+
+@inproceedings{wen_acl23_GRACE,
+    title = "{GRACE}: Gradient-guided Controllable Retrieval for Augmenting Attribute-based Text Generation",
+    author = "Wen, Zhihua  and
+      Tian, Zhiliang  and
+      Huang, Zhen  and
+      Yang, Yuxin  and
+      Jian, Zexin  and
+      Wang, Changjian  and
+      Li, Dongsheng",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.530",
+    doi = "10.18653/v1/2023.findings-acl.530",
+    pages = "8377--8398",
+    abstract = "Attribute-based generation methods are of growing significance in controlling the generation of large pre-trained language models (PLMs). Existing studies control the generation by (1) finetuning the model with attributes or (2) guiding the inference processing toward control signals while freezing the PLM. However, finetuning approaches infuse domain bias into generation, making it hard to generate out-of-domain texts. Besides, many methods guide the inference in its word-by-word generation, pushing the word probability to the target attributes, resulting in less fluent sentences. We argue that distilling controlling information from natural texts can produce fluent sentences while maintaining high controllability. In this paper, we propose \textbf{GRA}dient-guided \textbf{C}ontrollable r\textbf{E}trieval (GRACE), a retrieval-augmented generation framework to facilitate the generation of fluent sentences with high attribute relevance. GRACE memorizes the semantic and attribute information from unlabeled corpora and applies a controllable retrieval to obtain desired information. For the generation, we design techniques to eliminate the domain bias from the retrieval results and integrate it into the generation model. Additionally, we propose a gradient-guided generation scheme that iteratively steers generation toward higher attribute relevance. Experimental results and quantities of examples verify the effectiveness of our method.",
+}
+
+@inproceedings{pozzobon_emnlp23_goodtriever,
+    title = "Goodtriever: Adaptive Toxicity Mitigation with Retrieval-augmented Models",
+    author = "Pozzobon, Luiza  and
+      Ermis, Beyza  and
+      Lewis, Patrick  and
+      Hooker, Sara",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.339",
+    doi = "10.18653/v1/2023.findings-emnlp.339",
+    pages = "5108--5125",
+    abstract = "Considerable effort has been dedicated to mitigating toxicity, but existing methods often require drastic modifications to model parameters or the use of computationally intensive auxiliary models. Furthermore, previous approaches have often neglected the crucial factor of language{'}s evolving nature over time. In this work, we present a comprehensive perspective on toxicity mitigation that takes into account its changing nature. We introduce Goodtriever, a flexible methodology that matches the current state-of-the-art toxicity mitigation while achieving 43{\%} relative latency reduction during inference and being more computationally efficient. By incorporating a retrieval-based approach at decoding time, Goodtriever enables toxicity-controlled text generation. Our research advocates for an increased focus on adaptable mitigation techniques, which better reflect the data drift models face when deployed in the wild.",
+}
+
+@inproceedings{xu_emnlp20_MEGATRON-CNTRL,
+    title = "{MEGATRON}-{CNTRL}: Controllable Story Generation with External Knowledge Using Large-Scale Language Models",
+    author = "Xu, Peng  and
+      Patwary, Mostofa  and
+      Shoeybi, Mohammad  and
+      Puri, Raul  and
+      Fung, Pascale  and
+      Anandkumar, Anima  and
+      Catanzaro, Bryan",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.226",
+    doi = "10.18653/v1/2020.emnlp-main.226",
+    pages = "2831--2845",
+    abstract = "Existing pre-trained large language models have shown unparalleled generative capabilities. However, they are not controllable. In this paper, we propose MEGATRON-CNTRL, a novel framework that uses large-scale language models and adds control to text generation by incorporating an external knowledge base. Our framework consists of a keyword predictor, a knowledge retriever, a contextual knowledge ranker, and a conditional text generator. As we do not have access to ground-truth supervision for the knowledge ranker, we make use of weak supervision from sentence embedding. The empirical results show that our model generates more fluent, consistent, and coherent stories with less repetition and higher diversity compared to prior work on the ROC story dataset. We showcase the controllability of our model by replacing the keywords used to generate stories and re-running the generation process. Human evaluation results show that 77.5{\%} of these stories are successfully controlled by the new keywords. Furthermore, by scaling our model from 124 million to 8.3 billion parameters we demonstrate that larger models improve both the quality of generation (from 74.5{\%} to 93.0{\%} for consistency) and controllability (from 77.5{\%} to 91.5{\%}).",
+}
+
+@inproceedings{pascual_emnlp21_K2T,
+    title = "A Plug-and-Play Method for Controlled Text Generation",
+    author = "Pascual, Damian  and
+      Egressy, Beni  and
+      Meister, Clara  and
+      Cotterell, Ryan  and
+      Wattenhofer, Roger",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.334",
+    doi = "10.18653/v1/2021.findings-emnlp.334",
+    pages = "3973--3997",
+    abstract = "Large pre-trained language models have repeatedly shown their ability to produce fluent text. Yet even when starting from a prompt, generation can continue in many plausible directions. Current decoding methods with the goal of controlling generation, e.g., to ensure specific words are included, either require additional models or fine-tuning, or work poorly when the task at hand is semantically unconstrained, e.g., story generation. In this work, we present a plug-and-play decoding method for controlled language generation that is so simple and intuitive, it can be described in a single sentence: given a topic or keyword, we add a shift to the probability distribution over our vocabulary towards semantically similar words. We show how annealing this distribution can be used to impose hard constraints on language generation, something no other plug-and-play method is currently able to do with SOTA language generators. Despite the simplicity of this approach, we see it works incredibly well in practice: decoding from GPT-2 leads to diverse and fluent sentences while guaranteeing the appearance of given guide words. We perform two user studies, revealing that (1) our method outperforms competing methods in human evaluations; and (2) forcing the guide words to appear in the generated text has no impact on the fluency of the generated text.",
+}
+
+@inproceedings{lin_nuse21_PlugandBlend,
+    title = "Plug-and-Blend: A Framework for Controllable Story Generation with Blended Control Codes",
+    author = "Lin, Zhiyu  and
+      Riedl, Mark",
+    editor = "Akoury, Nader  and
+      Brahman, Faeze  and
+      Chaturvedi, Snigdha  and
+      Clark, Elizabeth  and
+      Iyyer, Mohit  and
+      Martin, Lara J.",
+    booktitle = "Proceedings of the Third Workshop on Narrative Understanding",
+    month = jun,
+    year = "2021",
+    address = "Virtual",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.nuse-1.7",
+    doi = "10.18653/v1/2021.nuse-1.7",
+    pages = "62--71",
+    abstract = "We describe a Plug-and-Play controllable language generation framework, Plug-and-Blend, that allows a human user to input multiple control codes (topics). In the context of automated story generation, this allows a human user lose or fine grained control of the topics that will appear in the generated story, and can even allow for overlapping, blended topics. We show that our framework, working with different generation models, controls the generation towards given continuous-weighted control codes while keeping the generated sentences fluent, demonstrating strong blending capability.",
+}
+
+@misc{han_acl24_LM-Steer,
+      title={Word Embeddings Are Steers for Language Models}, 
+      author={Chi Han and Jialiang Xu and Manling Li and Yi Fung and Chenkai Sun and Nan Jiang and Tarek Abdelzaher and Heng Ji},
+      year={2024},
+      eprint={2305.12798},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2305.12798}, 
+}
+
+@misc{zeng_arxiv24_UncertaintyAttack,
+      title={Uncertainty is Fragile: Manipulating Uncertainty in Large Language Models}, 
+      author={Qingcheng Zeng and Mingyu Jin and Qinkai Yu and Zhenting Wang and Wenyue Hua and Zihao Zhou and Guangyan Sun and Yanda Meng and Shiqing Ma and Qifan Wang and Felix Juefei-Xu and Kaize Ding and Fan Yang and Ruixiang Tang and Yongfeng Zhang},
+      year={2024},
+      eprint={2407.11282},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.11282}, 
+}

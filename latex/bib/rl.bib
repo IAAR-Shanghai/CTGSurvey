@@ -1,0 +1,172 @@
+@misc{ranzato_arxiv16_rlrnn,
+      title={Sequence Level Training with Recurrent Neural Networks}, 
+      author={Marc'Aurelio Ranzato and Sumit Chopra and Michael Auli and Wojciech Zaremba},
+      year={2016},
+      eprint={1511.06732},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/1511.06732}, 
+}
+
+@inproceedings{yu_aaai17_SeqGAN,
+  title={SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient},
+  author={Lantao Yu and Weinan Zhang and Jun Wang and Yong Yu},
+  booktitle={Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence},
+  year={2017},
+  pages={2852--2858},
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/10770}
+}
+
+@inproceedings{sutton_nips99_rm,
+author = {Sutton, Richard S. and McAllester, David and Singh, Satinder and Mansour, Yishay},
+title = {Policy gradient methods for reinforcement learning with function approximation},
+year = {1999},
+publisher = {MIT Press},
+address = {Cambridge, MA, USA},
+abstract = {Function approximation is essential to reinforcement learning, but the standard approach of approximating a value function and determining a policy from it has so far proven theoretically intractable. In this paper we explore an alternative approach in which the policy is explicitly represented by its own function approximator, independent of the value function, and is updated according to the gradient of expected reward with respect to the policy parameters. Williams's REINFORCE method and actor-critic methods are examples of this approach. Our main new result is to show that the gradient can be written in a form suitable for estimation from experience aided by an approximate action-value or advantage function. Using this result, we prove for the first time that a version of policy iteration with arbitrary differentiable function approximation is convergent to a locally optimal policy.},
+booktitle = {Proceedings of the 12th International Conference on Neural Information Processing Systems},
+pages = {1057–1063},
+numpages = {7},
+location = {Denver, CO},
+series = {NIPS'99}
+}
+
+
+@inproceedings{khalifa_iclr21_GDC,
+    title={A Distributional Approach to Controlled Text Generation},
+    author={Muhammad Khalifa and Hady Elsahar and Marc Dymetman},
+    booktitle={International Conference on Learning Representations},
+    year={2021},
+    url={https://openreview.net/forum?id=jWkw45-9AbL}
+}
+
+@misc{upadhyay_arxiv22_DRL,
+    title={Efficient Reinforcement Learning for Unsupervised Controlled Text Generation}, 
+    author={Bhargav Upadhyay and Akhilesh Sudhakar and Arjun Maheswaran},
+    year={2022},
+    eprint={2204.07696},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2204.07696}, 
+}
+
+@misc{zeng_arxiv24_TDPO,
+    title={Token-level Direct Preference Optimization}, 
+    author={Yongcheng Zeng and Guoqing Liu and Weiyu Ma and Ning Yang and Haifeng Zhang and Jun Wang},
+    year={2024},
+    eprint={2404.11999},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2404.11999}, 
+}
+
+@misc{li_arxiv24_TOLE,
+    title={Reinforcement Learning with Token-level Feedback for Controllable Text Generation}, 
+    author={Wendi Li and Wei Wei and Kaihe Xu and Wenfeng Xie and Dangyang Chen and Yu Cheng},
+    year={2024},
+    eprint={2403.11558},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2403.11558}, 
+}
+
+@inproceedings{zhou_neurips23_LIMA,
+    title={{LIMA}: Less Is More for Alignment},
+    author={Chunting Zhou and Pengfei Liu and Puxin Xu and Srini Iyer and Jiao Sun and Yuning Mao and Xuezhe Ma and Avia Efrat and Ping Yu and LILI YU and Susan Zhang and Gargi Ghosh and Mike Lewis and Luke Zettlemoyer and Omer Levy},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023},
+    url={https://openreview.net/forum?id=KBMOKmX2he}
+}
+
+@inproceedings{lin_iclr24_URIAL,
+    title={The Unlocking Spell on Base {LLM}s:  Rethinking Alignment via In-Context Learning},
+    author={Bill Yuchen Lin and Abhilasha Ravichander and Ximing Lu and Nouha Dziri and Melanie Sclar and Khyathi Chandu and Chandra Bhagavatula and Yejin Choi},
+    booktitle={The Twelfth International Conference on Learning Representations},
+    year={2024},
+    url={https://openreview.net/forum?id=wxJ0eXwwda}
+}
+
+@inproceedings{hallinan_emnlp23_STEER,
+    title = "{STEER}: Unified Style Transfer with Expert Reinforcement",
+    author = "Hallinan, Skyler  and
+      Brahman, Faeze  and
+      Lu, Ximing  and
+      Jung, Jaehun  and
+      Welleck, Sean  and
+      Choi, Yejin",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.506",
+    doi = "10.18653/v1/2023.findings-emnlp.506",
+    pages = "7546--7562",
+    abstract = "While text style transfer has many applications across natural language processing, the core premise of transferring from a single source style is unrealistic in a real-world setting. In this work, we focus on arbitrary style transfer: rewriting a text from an arbitrary, unknown style to a target style. We propose STEER: Unified Style Transfer with Expert Reinforcement, a unified frame-work developed to overcome the challenge of limited parallel data for style transfer. STEER involves automatically generating a corpus of style-transfer pairs using a product of experts during decoding. The generated offline data is then used to pre-train an initial policy before switching to online, off-policy reinforcement learning for further improvements via fine-grained reward signals. STEER is unified and can transfer to multiple target styles from an arbitrary, unknown source style, making it particularly flexible and efficient. Experimental results on a challenging dataset with text from a diverse set of styles demonstrate state-of-the-art results compared to competitive baselines. Remarkably, STEER outperforms the 175B parameter instruction-tuned GPT-3 on overall style transfer quality, despite being 226 times smaller in size. We also show STEER is robust, maintaining its style transfer capabilities on out-of-domain data, and surpassing nearly all baselines across various styles. The success of our method highlights the potential of RL algorithms when augmented with controllable decoding to overcome the challenge of limited data supervision.",
+}
+
+@misc{delangis_arxiv24_MSC,
+    title={Reinforcement Learning with Dynamic Multi-Reward Weighting for Multi-Style Controllable Generation}, 
+    author={Karin de Langis and Ryan Koo and Dongyeop Kang},
+    year={2024},
+    eprint={2402.14146},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2402.14146}, 
+}
+
+@inproceedings{stiennon_neurips20_RLHF,
+    author = {Stiennon, Nisan and Ouyang, Long and Wu, Jeffrey and Ziegler, Daniel and Lowe, Ryan and Voss, Chelsea and Radford, Alec and Amodei, Dario and Christiano, Paul F},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+    pages = {3008--3021},
+    publisher = {Curran Associates, Inc.},
+    title = {Learning to summarize with human feedback},
+    url = {https://proceedings.neurips.cc/paper_files/paper/2020/file/1f89885d556929e98d3ef9b86448f951-Paper.pdf},
+    volume = {33},
+    year = {2020}
+}
+
+@inproceedings{ouyang_neurips22_InstructGPT,
+    author = {Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul F and Leike, Jan and Lowe, Ryan},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+    pages = {27730--27744},
+    publisher = {Curran Associates, Inc.},
+    title = {Training language models to follow instructions with human feedback},
+    url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/b1efde53be364a73914f58805a001731-Paper-Conference.pdf},
+    volume = {35},
+    year = {2022}
+}
+
+@inproceedings{dai_iclr24_SafeRLHF,
+    title={Safe {RLHF}: Safe Reinforcement Learning from Human Feedback},
+    author={Josef Dai and Xuehai Pan and Ruiyang Sun and Jiaming Ji and Xinbo Xu and Mickel Liu and Yizhou Wang and Yaodong Yang},
+    booktitle={The Twelfth International Conference on Learning Representations},
+    year={2024},
+    url={https://openreview.net/forum?id=TyFrPOKYXw}
+}
+
+
+@inproceedings{jie_acl24_LengthPrompt,
+    title = "Prompt-Based Length Controlled Generation with Multiple Control Types",
+    author = "Jie, Renlong  and
+      Meng, Xiaojun  and
+      Shang, Lifeng  and
+      Jiang, Xin  and
+      Liu, Qun",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.63",
+    pages = "1067--1085",
+    abstract = "Large language models (LLMs) have attracted great attention given their strong performance on a wide range of NLP tasks. In practice, users often expect generated texts to fall within a specific length range, making length controlled generation an important topic, especially for GPT-style models. Existing length control methods mostly focus on a simple control type of {``}equal to{''} a target length. Different from them, we propose a prompt-based method to achieve length controlled generation under different control types with high accuracy. In particular, we adopt reinforcement learning (RL) and sample filtering with the reward signal given by rule-based reward models, which enhances the length control ability of models by rewarding outputs that follow certain control instructions. In addition, we introduce a standard prompt extractor to parse arbitrary users{'} input into standard control instructions. Experiments show that our method significantly improves the accuracy of prompt-based length control on popular summarization datasets like CNNDM and NYT under multiple control types. Moreover, both the standard prompt extractor and RL-tuned model show strong generalization to unseen control prompt templates.",
+}

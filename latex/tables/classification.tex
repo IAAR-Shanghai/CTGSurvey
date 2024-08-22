@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Classification of Intervention Stages, Control Methods, Specific Methods, and Example Methods}
+\label{tab:classification}
+\renewcommand{\arraystretch}{1.6}
+\footnotesize
+\begin{tabular}{p{0.12\textwidth}p{0.13\textwidth}p{0.18\textwidth}p{0.47\textwidth}} % 调整列宽
+\hline
+\textbf{\makecell[l]{Intervention\\ Stage}}               & \textbf{\makecell[l]{Control\\ Method}}                     & \textbf{Specific Method} & \textbf{Example Methods}                                                                                                                                                                                               \\ \hline
+\multirow{6}{*}{\makecell[l]{Training \\ Stage}}  & \multirow{2}{*}{\makecell[l]{Retraining}}       & Attribute Control        & CTRL \cite{keskar_arxiv19_Ctrl}, CoCon \cite{chan_iclr21_CoCon}, Director \cite{arora_aacl22_Director} et al.                                                 \\ \cline{3-4} 
+                                          &                                             & Content Control          & POINTER \cite{zhang_emnlp20_POINTER}, CBART \cite{he_emnlp21_CBART}, PAIR \cite{hua_emnlp20_PAIR} et al.                                                      \\ \cline{2-4} 
+                                          & \multirow{2}{*}{\makecell[l]{Fine-\\Tuning}}                & Adapter-Based      & Auxiliary Tuning \cite{zeldes_arxiv20_AuxiliaryTuning}, DisCup \cite{zhang_emnlp22_discup}, RMT \cite{zhang_acl24_RMT} et al.                               \\ \cline{3-4} 
+                                          &                                             & Data-Driven  & FLAN \cite{wei_iclr22_FLAN}, InstructCTG \cite{zhou_icml23_InstructCTG}, REI \cite{zheng_aacl23_REI} et al.                                                   \\ \cline{2-4} 
+                                          & \multirow{2}{*}{\makecell[l]{Reinforcement\\ Learning}}     & Automated Feedback       & GDC \cite{khalifa_iclr21_GDC}, DRL \cite{upadhyay_arxiv22_DRL}, TDPO \cite{zeng_arxiv24_TDPO} et al.                                                          \\ \cline{3-4} 
+                                          &                                             & Human Feedback           & RLHF \cite{stiennon_neurips20_RLHF}, InstructGPT \cite{ouyang_neurips22_InstructGPT}, Safe RLHF \cite{dai_iclr24_SafeRLHF} et al.                             \\ \hline
+\multirow{9}{*}{\makecell[l]{Inference \\ Stage}} & \multirow{2}{*}{\makecell[l]{Prompt \\ Engineering}}         & Hard Prompt             & AutoPrompt \cite{shin_emnlp20_Autoprompt}, DAs \cite{ramirez_sigdial23_DAs}, PCFG \cite{zhang_SEM23_PCFG} et al.                                              \\ \cline{3-4} 
+                                          &                                             & Soft Prompt             & Prefix Tuning \cite{li_acl21_PrefixTuning}, Prompt Tuning \cite{lester_emnlp21_PromptTuning} et al. \\ \cline{2-4} 
+                                          & \multirow{2}{*}{\makecell[l]{Latent Space \\ Manipulation}}  & Learning-Based           & GENhance \cite{chan_nips21_GENhance}, Latent Vectors \cite{subramani_acl22_LatentStreeringVectors} et al.                                                     \\ \cline{3-4} 
+                                          &                                             & Contrastive-Based        & ICV \cite{liu_arxiv24_ICV}, ActAdd \cite{turner_arxiv24_actadd}, Style Vectors \cite{konen_acl24_StyleVectors} et al.                                         \\ \cline{2-4} 
+                                          & \multirow{5}{*}{\makecell[l]{Decoding-Time \\ Intervention}} & Classifier Guidance      & PPLM \cite{dathathri_iclr20_PPLM}, FUDGE \cite{yang_acl21_fudge}, CAIF \cite{sitdikov_arxiv22_CAIF} et al.                                                    \\ \cline{3-4} 
+                                          &                                             & CC-LM Guidance           & GeDi \cite{krause_emnlp21_gedi}, DExperts \cite{liu_acl21_DExperts}, MARCO \cite{hallinan_acl23_MARCO} et al.                                                 \\ \cline{3-4} 
+                                          &                                             & Self-Feedback            & Inverse Prompting \cite{zou_KDD21_Inverse-Prompting}, SD \cite{schick_tacl21_SD}, ROSE \cite{zhong_arxiv24_ROSE} et al.                                       \\ \cline{3-4} 
+                                          &                                             & Energy-Based Model       & MUCOCO \cite{kumar_nips21_MUCOCO}, MUCOLA \cite{kumar_emnlp22_MUCOLA}, Mix\&Match \cite{mireshghallah_acl22_mixandmatch} et al.                               \\ \cline{3-4} 
+                                          &                                             & External Knowledge       & kNN-LM \cite{Khandelwal_iclr20_kNN-LM}, GRACE \cite{wen_acl23_GRACE} et al.                                  \\ \hline
+\end{tabular}
+\end{table}

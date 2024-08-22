@@ -1,0 +1,215 @@
+@inproceedings{chan_nips21_GENhance,
+    title={Deep Extrapolation for Attribute-Enhanced Generation},
+    author={Alvin Chan and Ali Madani and Ben Krause and Nikhil Naik},
+    booktitle={Advances in Neural Information Processing Systems},
+    editor={A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+    year={2021},
+    url={https://openreview.net/forum?id=NCDMYD2y5kK}
+}
+
+@inproceedings{subramani_acl22_LatentStreeringVectors,
+    title = "Extracting Latent Steering Vectors from Pretrained Language Models",
+    author = "Subramani, Nishant  and
+      Suresh, Nivedita  and
+      Peters, Matthew",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.48",
+    doi = "10.18653/v1/2022.findings-acl.48",
+    pages = "566--581",
+    abstract = "Prior work on controllable text generation has focused on learning how to control language models through trainable decoding, smart-prompt design, or fine-tuning based on a desired objective. We hypothesize that the information needed to steer the model to generate a target sentence is already encoded within the model. Accordingly, we explore a different approach altogether: extracting latent vectors directly from pretrained language model decoders without fine-tuning. Experiments show that there exist steering vectors, which, when added to the hidden states of the language model, generate a target sentence nearly perfectly ({\textgreater} 99 BLEU) for English sentences from a variety of domains. We show that vector arithmetic can be used for unsupervised sentiment transfer on the Yelp sentiment benchmark, with performance comparable to models tailored to this task. We find that distances between steering vectors reflect sentence similarity when evaluated on a textual similarity benchmark (STS-B), outperforming pooled hidden states of models. Finally, we present an analysis of the intrinsic properties of the steering vectors. Taken together, our results suggest that frozen LMs can be effectively controlled through their latent steering space.",
+}
+
+@misc{liu_arxiv24_ICV,
+      title={In-context Vectors: Making In Context Learning More Effective and Controllable Through Latent Space Steering}, 
+      author={Sheng Liu and Haotian Ye and Lei Xing and James Zou},
+      year={2024},
+      eprint={2311.06668},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2311.06668}, 
+}
+
+@misc{turner_arxiv24_actadd,
+      title={Activation Addition: Steering Language Models Without Optimization}, 
+      author={Alexander Matt Turner and Lisa Thiergart and Gavin Leech and David Udell and Juan J. Vazquez and Ulisse Mini and Monte MacDiarmid},
+      year={2024},
+      eprint={2308.10248},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2308.10248}, 
+}
+
+@inproceedings{konen_acl24_StyleVectors,
+    title = "Style Vectors for Steering Generative Large Language Models",
+    author = {Konen, Kai  and
+      Jentzsch, Sophie  and
+      Diallo, Diaoul{\'e}  and
+      Sch{\"u}tt, Peer  and
+      Bensch, Oliver  and
+      El Baff, Roxanne  and
+      Opitz, Dominik  and
+      Hecking, Tobias},
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2024",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-eacl.52",
+    pages = "782--802",
+    abstract = "This research explores strategies for steering the output of large language models (LLMs) towards specific styles, such as sentiment, emotion, or writing style, by adding style vectors to the activations of hidden layers during text generation. We show that style vectors can be simply computed from recorded layer activations for input texts in a specific style in contrast to more complex training-based approaches. Through a series of experiments, we demonstrate the effectiveness of activation engineering using such style vectors to influence the style of generated text in a nuanced and parameterisable way, distinguishing it from prompt engineering. The presented research constitutes a significant step towards developing more adaptive and effective AI-empowered interactive systems.",
+}
+
+@inproceedings{leong_acl23_SRDT,
+    title = "Self-Detoxifying Language Models via Toxification Reversal",
+    author = "Leong, Chak Tou  and
+      Cheng, Yi  and
+      Wang, Jiashuo  and
+      Wang, Jian  and
+      Li, Wenjie",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.269",
+    doi = "10.18653/v1/2023.emnlp-main.269",
+    pages = "4433--4449",
+    abstract = "Language model detoxification aims to minimize the risk of generating offensive or harmful content in pretrained language models (PLMs) for safer deployment. Existing methods can be roughly categorized as finetuning-based and decoding-based. However, the former is often resource-intensive, while the latter relies on additional components and potentially compromises the generation fluency. In this paper, we propose a more lightweight approach that enables the PLM itself to achieve {``}self-detoxification{''}. Our method is built upon the observation that prepending a negative steering prompt can effectively induce PLMs to generate toxic content. At the same time, we are inspired by the recent research in the interpretability field, which formulates the evolving contextualized representations within the PLM as an information stream facilitated by the attention layers. Drawing on this idea, we devise a method to identify the toxification direction from the normal generation process to the one prompted with the negative prefix, and then steer the generation to the reversed direction by manipulating the information movement within the attention layers. Experimental results show that our approach, without any fine-tuning or extra components, can achieve comparable performance with state-of-the-art methods.",
+}
+
+@misc{li_arxiv24_DESTEIN,
+      title={DESTEIN: Navigating Detoxification of Language Models via Universal Steering Pairs and Head-wise Activation Fusion}, 
+      author={Yu Li and Zhihua Wei and Han Jiang and Chuanyang Gong},
+      year={2024},
+      eprint={2404.10464},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2404.10464}, 
+}
+
+@misc{wang_arxiv24_InferAligner,
+      title={InferAligner: Inference-Time Alignment for Harmlessness through Cross-Model Guidance}, 
+      author={Pengyu Wang and Dong Zhang and Linyang Li and Chenkun Tan and Xinghao Wang and Ke Ren and Botian Jiang and Xipeng Qiu},
+      year={2024},
+      eprint={2401.11206},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2401.11206}, 
+}
+
+@inproceedings{lu_acl23_miracle,
+    title = "Miracle: Towards Personalized Dialogue Generation with Latent-Space Multiple Personal Attribute Control",
+    author = "Lu, Zhenyi  and
+      Wei, Wei  and
+      Qu, Xiaoye  and
+      Mao, Xian-Ling  and
+      Chen, Dangyang  and
+      Chen, Jixiong",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.395",
+    doi = "10.18653/v1/2023.findings-emnlp.395",
+    pages = "5933--5957",
+    abstract = "Personalized dialogue systems aim to endow the chatbot agent with more anthropomorphic traits for human-like interactions. Previous approaches have explored explicitly user profile modeling using text descriptions, implicit derivation of user embeddings, or utilizing handicraft prompts for ChatGPT-like models. However, textual personas are limited in describing multi-faceted attributes (\textit{e.g.}, \textit{language style, inner character nuances}), implicit embedding suffers from personality sparsity, and handicraft prompts lack fine-grained and stable controllability. Hence, these approaches may struggle with complex personalized dialogue generation tasks that require generating controllable responses with multiple personal attributes. To this end, we propose \textbf{Miracle}, a novel personalized dialogue generation method through \textbf{M}ult\textbf{I}ple Pe\textbf{R}sonal \textbf{A}ttributes \textbf{C}ontrol within \textbf{L}atent-Space \textbf{E}nergy-based Models. ttributes \textbf{C}ontrol within \textbf{L}atent-Space \textbf{E}nergy-based Models. Specifically, our approach first disentangles complex personality into multi-faceted attributes. Subsequently, we employ a conditional variational auto-encoder to align with the dense personalized responses within a latent joint attribute space. We have also tailored a dedicated energy function and customized the ordinary differential equations sampling method to offer flexible attribute composition and precise attribute control. Extensive experiments demonstrate that Miracle outperforms several strong baselines in terms of personality controllability and response generation quality. Our dataset and code are available at \url{https://github.com/LZY-the-boys/MIRACLE}",
+}
+
+@inproceedings{ding_acl23_maclasa,
+    title = "{M}ac{L}a{S}a: Multi-Aspect Controllable Text Generation via Efficient Sampling from Compact Latent Space",
+    author = "Ding, Hanxing  and
+      Pang, Liang  and
+      Wei, Zihao  and
+      Shen, Huawei  and
+      Cheng, Xueqi  and
+      Chua, Tat-Seng",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.292",
+    doi = "10.18653/v1/2023.findings-emnlp.292",
+    pages = "4424--4436",
+    abstract = "Multi-aspect controllable text generation aims to generate fluent sentences that possess multiple desired attributes simultaneously. Traditional methods either require expensive iteration / searching within the discrete text space during the decoding stage, or train separate controllers for each aspect, resulting in a degradation of text quality due to the discrepancy between different aspects. To address these limitations, we introduce a novel approach for $\textbf{M}$ulti-$\textbf{a}$spect $\textbf{c}$ontrol, namely MacLaSa, that estimates compact $\textbf{La}$tent space for multiple aspects, and performs efficient $\textbf{Sa}$mpling with a fast sampler. To eliminate the domain discrepancies between different aspects, we first utilize a variational autoencoder (VAE) network to map text sequences from various data sources into close latent representations. The estimated latent space enables the formulation of joint energy-based models and the plugging in of arbitrary attribute discriminators to achieve multi-aspect control. Afterwards, we draw latent samples with a fast sampler based on ordinary differential equations and feed sampled examples to the VAE decoder to produce target text sequences. Experimental results demonstrate that MacLaSa outperforms strong baselines on both attribute relevance and textual quality while maintaining a high inference speed.",
+}
+
+@inproceedings{liu_acl24_MAGIC,
+    title = "Multi-Aspect Controllable Text Generation with Disentangled Counterfactual Augmentation",
+    author = "Liu, Yi  and
+      Liu, Xiangyu  and
+      Zhu, Xiangrong  and
+      Hu, Wei",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.500",
+    pages = "9231--9253",
+    abstract = "Multi-aspect controllable text generation aims to control the generated texts in attributes from multiple aspects (e.g., {``}positive{''} from sentiment and {``}sport{''} from topic). Existing works neglect attribute correlations formed by the intertwining of different attributes. Particularly, the stereotype formed by imbalanced attribute correlations significantly affects multi-aspect control. In this paper, we propose MAGIC, a new multi-aspect controllable text generation method with disentangled counterfactual augmentation. We alleviate the issue of imbalanced attribute correlations during training using counterfactual feature vectors in the attribute latent space by disentanglement. During inference, we enhance attribute correlations by target-guided counterfactual augmentation to further improve multi-aspect control. Experiments show that MAGIC outperforms state-of-the-art baselines in both imbalanced and balanced attribute correlation scenarios.",
+}
+
+@inproceedings{feng_acl24_freectrl,
+    title = "{F}ree{C}trl: Constructing Control Centers with Feedforward Layers for Learning-Free Controllable Text Generation",
+    author = "Feng, Zijian  and
+      Zhou, Hanzhang  and
+      Mao, Kezhi  and
+      Zhu, Zixiao",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.412",
+    pages = "7627--7640",
+    abstract = "Controllable text generation (CTG) seeks to craft texts adhering to specific attributes, traditionally employing learning-based techniques such as training, fine-tuning, or prefix-tuning with attribute-specific datasets. These approaches, while effective, demand extensive computational and data resources. In contrast, some proposed learning-free alternatives circumvent learning but often yield inferior results, exemplifying the fundamental machine learning trade-off between computational expense and model efficacy. To overcome these limitations, we propose FreeCtrl, a learning-free approach that dynamically adjusts the weights of selected feedforward neural network (FFN) vectors to steer the outputs of large language models (LLMs). FreeCtrl hinges on the principle that the weights of different FFN vectors influence the likelihood of different tokens appearing in the output. By identifying and adaptively adjusting the weights of attribute-related FFN vectors, FreeCtrl can control the output likelihood of attribute keywords in the generated content. Extensive experiments on single- and multi-attribute control reveal that the learning-free FreeCtrl outperforms other learning-free and learning-based methods, successfully resolving the dilemma between learning costs and model performance.",
+}
+
+@inproceedings{gu_emnlp23_PriorControl,
+    title = "Controllable Text Generation via Probability Density Estimation in the Latent Space",
+    author = "Gu, Yuxuan  and
+      Feng, Xiaocheng  and
+      Ma, Sicheng  and
+      Zhang, Lingyuan  and
+      Gong, Heng  and
+      Zhong, Weihong  and
+      Qin, Bing",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.704",
+    doi = "10.18653/v1/2023.acl-long.704",
+    pages = "12590--12616",
+    abstract = "Previous work on controllable text generation has explored the idea of control from the latent space, such as optimizing a representation with attribute-specific classifiers or sampling one from relevant discrete samples. However, they cannot effectively model a complex space with diverse attributes, high dimensionality, and asymmetric structure, leaving subsequent controls unsatisfying. In this work, we propose a novel control framework using probability density estimation in the latent space. Our method utilizes an invertible transformation function, the Normalizing Flow, that maps the complex distributions in the latent space to simple Gaussian distributions in the prior space. Thus, we can perform sophisticated and flexible controls in the prior space and feed the control effects back into the latent space owing to the bijection property of invertible transformations. Experiments on single-attribute and multi-attribute control reveal that our method outperforms several strong baselines on attribute relevance and text quality, achieving a new SOTA. Further analysis of control strength adjustment demonstrates the flexibility of our control strategy.",
+}

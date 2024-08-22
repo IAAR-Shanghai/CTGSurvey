@@ -1,0 +1,59 @@
+\begin{figure*}[t]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{forest}
+for tree={
+    grow=east,
+    parent anchor=east,
+    child anchor=west,
+    draw,
+    rounded corners,
+    align=center,
+    l sep+=10pt,
+    s sep+=5pt,
+    font=\sffamily,
+    inner xsep=10pt,
+    inner ysep=4pt,
+    fill=blue!10,
+    draw=blue!50,
+    line width=1pt,
+    edge path={
+        \noexpand\path [draw=blue!50, thick, -] (!u.south east) |- (.child anchor)\forestoption{edge label};
+    }
+}
+[Agent Architecture
+    [Memory
+        [Memory Sources
+            [User-Agent Interaction
+                [\textit{e.g. Xu et al. (2022), Jiang et al., RoleInteract (Chen et al., 2024a)}]
+            ]
+            [Agent-Agent Interaction
+                [\textit{e.g. Maas et al. (2023), Generative Agent (Park et al., 2023)}]
+            ]
+        ]
+        [Memory Usage
+            [Retrieval-based
+                [\textit{e.g. PLATO-LTM (Xu et al., 2022), Bae et al. (2022)}]
+            ]
+            [Compressive-based
+                [\textit{e.g. COMEDY (Chen et al., 2024b), Wang et al. (2023d)}]
+            ]
+        ]
+    ]
+    [Planning
+        [Planning Formulation
+            [\textit{e.g. Dasgupta et al. (2023), Wang et al. (2023d), Inner Monologue (Huang et al., 2022a)}]
+        ]
+        [Planning Reflection
+            [\textit{e.g. Generative Agent (Park et al., 2023), MORTISE (Tang et al., 2024), Wu et al. (2022)}]
+        ]
+    ]
+    [Action
+        [\textit{e.g. RoleLLM (Wang et al., 2023e), Humanoid Agents (Wang et al., 2023g), Shen et al. (2024a)}]
+    ]
+]
+\end{forest}
+}
+\caption{The main content flow and categorization of Agent Architecture.}
+\label{fig:agent-architecture}
+\end{figure*}

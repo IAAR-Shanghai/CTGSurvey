@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{Summary of Decoding-time Intervention Research Directions}
+\label{tab:decoding-time}
+\renewcommand{\arraystretch}{1.6}
+\footnotesize
+\begin{tabular}{m{0.2\textwidth}m{0.27\textwidth}m{0.43\textwidth}} 
+\hline
+\textbf{Category} & \textbf{Research Direction} & \textbf{Method} \\ \hline
+\multirow{5.5}{*}{\centering \makecell{\textbf{Classifier Guidance}}} 
+& Scoring Function Innovation & PPLM\cite{dathathri_iclr20_PPLM} (2020), FUDGE\cite{yang_acl21_fudge} (2021), CriticControl\cite{kim_acl23-CriticControl} (2023), RAD\cite{deng_acl23_rad} (2023), MIL-Decoding\cite{zhang_acl23_MIL-Decoding} (2023), SF-GEN\cite{cao_arxiv23_SF-GEN} (2023) \\ \cline{2-3} 
+& Intervention Method Innovation & BEAMR\cite{landsman_acl22_beamr} (2022), NEUROLOGIC\cite{lu_acl21_neurologic} (2021), NEUROLOGIC AFesque\cite{lu_acl22-neurologic-AFesque} (2022), CD\cite{mudgal_nips23_Controlled-Decoding} (2023), DATG\cite{liang_arxiv24_DATG} (2024) \\ \cline{2-3} 
+& Special Issue Resolution & CAT-PAW\cite{gu_acl22-CAT-PAW} (2022), Gemini Discriminator\cite{liu_arxiv22_Gemini} (2022), NADO\cite{meng_NIPS22_NADO} (2022), DECIDER\cite{xu_arxiv24_DECIDER} (2024), ILC\cite{zheng_acl23_ILC} (2023) \\ \hline
+\multirow{1}{*}{\centering \makecell{\textbf{CC-LM Guidance}}} & CC-LM Guidance & GeDi\cite{krause_emnlp21_gedi} (2021), DExperts\cite{liu_acl21_DExperts} (2021), MARCO\cite{hallinan_acl23_MARCO} (2023), Air-Decoding\cite{zhong_acl23_Air-Decoding} (2023), Arithmetic\cite{dekoninck_iclr24_Arithmetic} (2024) \\ \hline
+\multirow{2.5}{*}{\centering \makecell{\textbf{Model Self-Feedback}}} 
+& Inverse Prompting & Inverse Prompting\cite{zou_KDD21_Inverse-Prompting} (2021), Self-Diagnosis and Self-Debiasing (SD)\cite{schick_tacl21_SD} (2021) \\ \cline{2-3} 
+& Contrastive Decoding & PREADD\cite{pei_acl23_PREADD} (2023), COGNACGEN\cite{chen_arxiv22_COGNACGEN} (2022), ROSE\cite{zhong_arxiv24_ROSE} (2024) \\ \hline
+\multirow{3}{*}{\centering \makecell{\textbf{Energy-Based Model}}} 
+& Gradient Sampling & MUCOCO\cite{kumar_nips21_MUCOCO} (2021), MUCOLA\cite{kumar_emnlp22_MUCOLA} (2022), COLD\cite{qin_NEURIPS22_COLD} (2022), COLD-Attack\cite{guo_arxiv24_ColdAttack} (2024), BOLT\cite{liu_acl23_bolt} (2023) \\ \cline{2-3} 
+& Acceptance-Rejection Sampling & Mix\&Match\cite{mireshghallah_acl22_mixandmatch} (2022), BlockMH\cite{forristal_conll23_BlockMH} (2023), ScoPE\cite{yu_acl24_ScoPE} (2024) \\ \hline
+\multirow{3}{*}{\centering \makecell{\textbf{External Knowledge}}} 
+& Semantic Guidance & LM-Steer \cite{han_acl24_LM-Steer} (2024), K2T\cite{pascual_emnlp21_K2T} (2021) \\ \cline{2-3} 
+& Knowledge Retrieval & kNN-LM\cite{Khandelwal_iclr20_kNN-LM} (2020), kNN-SCG\cite{trotta_gem22_kNN-SCG} (2022), kNN-CTG\cite{nawezi_tllm23_kNN-CTG} (2023), MEGATRON-CNTRL\cite{xu_emnlp20_MEGATRON-CNTRL} (2020),  GRACE\cite{wen_acl23_GRACE} (2023), Goodtriever\cite{pozzobon_emnlp23_goodtriever} (2023) \\ \hline
+\end{tabular}
+\end{table}

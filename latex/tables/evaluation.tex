@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Summary of Evaluation Methods and Metrics}
+\label{tab:evaluation}
+\renewcommand{\arraystretch}{1.6}
+\footnotesize
+\begin{tabular}{llp{0.55\textwidth}}
+\hline
+\textbf{Evaluation Type}             & \textbf{Aspect}                & \textbf{Description}                                   \\ \hline
+\multirow{7}{*}{\makecell[l]{\textbf{Automatic} \\ \textbf{Evaluation}}}  & \multirow{5}{*}{\makecell[l]{\textbf{General Metrics}}} & N-gram Overlap-based: BLEU\cite{papineni_acl02_bleu}, ROUGE\cite{lin_acl04_rouge}, METEOR\cite{banerjee_acl05_meteor}, NIST\cite{doddington_hlt02_nist}, Distinct-n\cite{li_naacl16_diversity}, Repetition-n\cite{shao_emnlp19_repetition}, Self-BLEU\cite{zhu_sigir18_selfbleu}               \\ \cline{3-3}
+                                     &                                 & Language Model-based: Perplexity, BertScore\cite{zhang_iclr20_bertscore}, MoverScore\cite{zhao_emnlp19_moverscore}, BLEURT\cite{sellam_acl20_bleurt} \\ \cline{3-3}
+                                     &                                 & Distance-based: TER\cite{snover_amta06_ter}                                           \\ \cline{3-3}
+                                     &                                 & Other: CIDEr\cite{vedantam_cvpr15_cider}, SPICE\cite{anderson_eccv16_spice}      \\ \cline{2-3}
+                                     & \makecell[l]{\textbf{Task-specific Metrics}}          & Classifiers or API for specific attributes\cite{zhong_acl23_Air-Decoding, liang_arxiv24_DATG}                    \\ \hline
+\multirow{2.5}{*}{\makecell[l]{\textbf{Human} \\ \textbf{Evaluation}}}      & \multirow{1.5}{*}{\makecell[l]{\textbf{Evaluation Metrics}}}               & Fluency, Coherence, Topicality, General Quality, Attribute Relevance \\ \cline{2-3}
+                                     & \textbf{Evaluation Methods}               & A/B test, N-point Likert-like scale                           \\ \hline
+\textbf{LLM-based}                   & \textbf{Approach}              & Using LLM for Evaluation\cite{liu_arxiv24_ICV, dai_iclr24_SafeRLHF, li_arxiv24_DESTEIN, zhong_arxiv24_ROSE, wang_arxiv24_InferAligner, guo_arxiv24_ColdAttack, xia_arxiv24_fofo}                                      \\ \hline
+\end{tabular}
+\end{table}

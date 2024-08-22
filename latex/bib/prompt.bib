@@ -1,0 +1,314 @@
+@article{wan_arxiv23_promptSurvey,
+  title={Efficient large language models: A survey},
+  author={Wan, Zhongwei and Wang, Xin and Liu, Che and Alam, Samiul and Zheng, Yu and others},
+  journal={arXiv preprint arXiv:2312.03863},
+  volume={1},
+  year={2023},
+  publisher={no}
+}
+
+@inproceedings{shin_emnlp20_Autoprompt,
+    title = "{A}uto{P}rompt: {E}liciting {K}nowledge from {L}anguage {M}odels with {A}utomatically {G}enerated {P}rompts",
+    author = "Shin, Taylor  and
+      Razeghi, Yasaman  and
+      Logan IV, Robert L.  and
+      Wallace, Eric  and
+      Singh, Sameer",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.346",
+    doi = "10.18653/v1/2020.emnlp-main.346",
+    pages = "4222--4235",
+    abstract = "The remarkable success of pretrained language models has motivated the study of what kinds of knowledge these models learn during pretraining. Reformulating tasks as fill-in-the-blanks problems (e.g., cloze tests) is a natural approach for gauging such knowledge, however, its usage is limited by the manual effort and guesswork required to write suitable prompts. To address this, we develop AutoPrompt, an automated method to create prompts for a diverse set of tasks, based on a gradient-guided search. Using AutoPrompt, we show that masked language models (MLMs) have an inherent capability to perform sentiment analysis and natural language inference without additional parameters or finetuning, sometimes achieving performance on par with recent state-of-the-art supervised models. We also show that our prompts elicit more accurate factual knowledge from MLMs than the manually created prompts on the LAMA benchmark, and that MLMs can be used as relation extractors more effectively than supervised relation extraction models. These results demonstrate that automatically generated prompts are a viable parameter-free alternative to existing probing methods, and as pretrained LMs become more sophisticated and capable, potentially a replacement for finetuning.",
+}
+
+@inproceedings{ramirez_sigdial23_DAs,
+    title = "Controllable Generation of Dialogue Acts for Dialogue Systems via Few-Shot Response Generation and Ranking",
+    author = "Ramirez, Angela  and
+      Agarwal, Kartik  and
+      Juraska, Juraj  and
+      Garg, Utkarsh  and
+      Walker, Marilyn",
+    editor = "Stoyanchev, Svetlana  and
+      Joty, Shafiq  and
+      Schlangen, David  and
+      Dusek, Ondrej  and
+      Kennington, Casey  and
+      Alikhani, Malihe",
+    booktitle = "Proceedings of the 24th Annual Meeting of the Special Interest Group on Discourse and Dialogue",
+    month = sep,
+    year = "2023",
+    address = "Prague, Czechia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.sigdial-1.32",
+    doi = "10.18653/v1/2023.sigdial-1.32",
+    pages = "355--369",
+    abstract = "Dialogue systems need to produce responses that realize multiple types of dialogue acts (DAs) with high semantic fidelity. In the past, natural language generators (NLGs) for dialogue were trained on large parallel corpora that map from a domain-specific DA and its semantic attributes to an output utterance. Recent work shows that pretrained language models (LLMs) offer new possibilities for controllable NLG using prompt-based learning. Here we develop a novel few-shot overgenerate-and-rank approach that achieves the controlled generation of DAs. We compare eight few-shot prompt styles that include a novel method of generating from textual pseudo-references using a textual style transfer approach. We develop six automatic ranking functions that identify outputs with both the correct DA and high semantic accuracy at generation time. We test our approach on three domains and four LLMs. To our knowledge, this is the first work on NLG for dialogue that automatically ranks outputs using both DA and attribute accuracy. For completeness, we compare our results to fine-tuned few-shot models trained with 5 to 100 instances per DA. Our results show that several prompt settings achieve perfect DA accuracy, and near perfect semantic accuracy (99.81{\%}) and perform better than few-shot fine-tuning.",
+}
+
+@inproceedings{zhang_SEM23_PCFG,
+    title = "{PCFG}-Based Natural Language Interface Improves Generalization for Controlled Text Generation",
+    author = "Zhang, Jingyu  and
+      Glass, James  and
+      He, Tianxing",
+    editor = "Palmer, Alexis  and
+      Camacho-collados, Jose",
+    booktitle = "Proceedings of the 12th Joint Conference on Lexical and Computational Semantics (*SEM 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.starsem-1.27",
+    doi = "10.18653/v1/2023.starsem-1.27",
+    pages = "295--313",
+    abstract = "Existing work on controlled text generation (CTG) assumes a control interface of categorical attributes. In this work, we propose a natural language (NL) interface, where we craft a PCFG to embed the control attributes into natural language commands, and propose variants of existing CTG models that take commands as input. In our experiments, we design tailored setups to test the model{'}s generalization abilities. We find our PCFG-based command generation approach is effective for handling unseen commands compared to fix-set templates. Further, our proposed NL models can effectively generalize to unseen attributes (a new ability enabled by the NL interface), as well as unseen attribute combinations. Interestingly, in model comparisons, the simple conditional generation approach, enhanced with our proposed NL interface, is shown to be a strong baseline in those challenging settings.",
+}
+
+@article{yang_2024_PCTGX,
+  author    = {Zhian Yang and Hao Jiang and Aobo Deng and Yang Li},
+  title     = {Topic-Oriented Controlled Text Generation for Social Networks},
+  journal   = {Journal of Signal Processing Systems},
+  year      = {2024},
+  volume    = {96},
+  number    = {2},
+  pages     = {131--151},
+  month     = {feb},
+  doi       = {10.1007/s11265-023-01907-2},
+  url       = {https://doi.org/10.1007/s11265-023-01907-2},
+  abstract  = {Currently, advances in text modeling by Pre-trained Language Models (PLM) enable machines to generate texts that are fluent and human language-specific. However, in the social network scenario, the generated text still has the issues of not being able to recognize sarcastic opinions, not conforming to social network language conventions, not containing topic-related knowledge information, and degrading some attributes when controlled by multiple attributes, which cannot control the stance, style, and topic of the generated text accurately. Besides, there is a lot of false and malicious news on the Internet, jeopardizing the security of the network and big data. To address these challenges, we defined and analyzed the attributes of topic texts and then proposed a PCTG-X model for single attribute discriminator control of PLM decoding based on prompt learning in order to control the stance, style, and topic attributes, respectively. We collected topic datasets from social platforms such as Twitter, and used some publicly available social text datasets to design model evaluation metrics and comparison experiments. The experiments show that PCTG-X has a significant improvement in the control of three single attributes of stance, style and topic compared with the benchmark method.}
+}
+
+@inproceedings{yu_emnlp21_AttributeAlignment,
+    title = "Attribute Alignment: Controlling Text Generation from Pre-trained Language Models",
+    author = "Yu, Dian  and
+      Yu, Zhou  and
+      Sagae, Kenji",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.194",
+    doi = "10.18653/v1/2021.findings-emnlp.194",
+    pages = "2251--2268",
+    abstract = "Large language models benefit from training with a large amount of unlabeled text, which gives them increasingly fluent and diverse generation capabilities. However, using these models for text generation that takes into account target attributes, such as sentiment polarity or specific topics, remains a challenge. We propose a simple and flexible method for controlling text generation by aligning disentangled attribute representations. In contrast to recent efforts on training a discriminator to perturb the token level distribution for an attribute, we use the same data to learn an alignment function to guide the pre-trained, non-controlled language model to generate texts with the target attribute without changing the original language model parameters. We evaluate our method on sentiment- and topic-controlled generation, and show large performance gains over previous methods while retaining fluency and diversity.",
+}
+
+@inproceedings{li_acl21_PrefixTuning,
+    title = "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+    author = "Li, Xiang Lisa  and
+      Liang, Percy",
+    editor = "Zong, Chengqing  and
+      Xia, Fei  and
+      Li, Wenjie  and
+      Navigli, Roberto",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.353",
+    doi = "10.18653/v1/2021.acl-long.353",
+    pages = "4582--4597",
+    abstract = "Fine-tuning is the de facto way of leveraging large pretrained language models for downstream tasks. However, fine-tuning modifies all the language model parameters and therefore necessitates storing a full copy for each task. In this paper, we propose prefix-tuning, a lightweight alternative to fine-tuning for natural language generation tasks, which keeps language model parameters frozen and instead optimizes a sequence of continuous task-specific vectors, which we call the prefix. Prefix-tuning draws inspiration from prompting for language models, allowing subsequent tokens to attend to this prefix as if it were {``}virtual tokens{''}. We apply prefix-tuning to GPT-2 for table-to-text generation and to BART for summarization. We show that by learning only 0.1{\%} of the parameters, prefix-tuning obtains comparable performance in the full data setting, outperforms fine-tuning in low-data settings, and extrapolates better to examples with topics that are unseen during training.",
+}
+
+@inproceedings{lester_emnlp21_PromptTuning,
+    title = "The Power of Scale for Parameter-Efficient Prompt Tuning",
+    author = "Lester, Brian  and
+      Al-Rfou, Rami  and
+      Constant, Noah",
+    editor = "Moens, Marie-Francine  and
+      Huang, Xuanjing  and
+      Specia, Lucia  and
+      Yih, Scott Wen-tau",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.243",
+    doi = "10.18653/v1/2021.emnlp-main.243",
+    pages = "3045--3059",
+    abstract = "In this work, we explore {``}prompt tuning,{''} a simple yet effective mechanism for learning {``}soft prompts{''} to condition frozen language models to perform specific downstream tasks. Unlike the discrete text prompts used by GPT-3, soft prompts are learned through backpropagation and can be tuned to incorporate signals from any number of labeled examples. Our end-to-end learned approach outperforms GPT-3{'}s few-shot learning by a large margin. More remarkably, through ablations on model size using T5, we show that prompt tuning becomes more competitive with scale: as models exceed billions of parameters, our method {``}closes the gap{''} and matches the strong performance of model tuning (where all model weights are tuned). This finding is especially relevant because large models are costly to share and serve and the ability to reuse one frozen model for multiple downstream tasks can ease this burden. Our method can be seen as a simplification of the recently proposed {``}prefix tuning{''} of Li and Liang (2021) and we provide a comparison to this and other similar approaches. Finally, we show that conditioning a frozen model with soft prompts confers benefits in robustness to domain transfer and enables efficient {``}prompt ensembling.{''} We release code and model checkpoints to reproduce our experiments.",
+}
+
+@misc{liu_arxiv21_PTuning,
+      title={GPT Understands, Too}, 
+      author={Xiao Liu and Yanan Zheng and Zhengxiao Du and Ming Ding and Yujie Qian and Zhilin Yang and Jie Tang},
+      year={2023},
+      eprint={2103.10385},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2103.10385}, 
+}
+
+@inproceedings{qian_acl22_ContrastivePrefixes,
+    title = "Controllable Natural Language Generation with Contrastive Prefixes",
+    author = "Qian, Jing  and
+      Dong, Li  and
+      Shen, Yelong  and
+      Wei, Furu  and
+      Chen, Weizhu",
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.229",
+    doi = "10.18653/v1/2022.findings-acl.229",
+    pages = "2912--2924",
+    abstract = "To guide the generation of large pretrained language models (LM), previous work has focused on directly fine-tuning the language model or utilizing an attribute discriminator. In this work, we propose a novel lightweight framework for controllable GPT2 generation, which utilizes a set of small attribute-specific vectors, called prefixes (Li and Liang, 2021), to steer natural language generation. Different from Li and Liang (2021), where each prefix is trained independently, we take the relationship among prefixes into consideration and train multiple prefixes simultaneously. We propose a novel supervised method and also an unsupervised method to train the prefixes for single-aspect control while the combination of these two methods can achieve multi-aspect control. Experimental results on both single-aspect and multi-aspect control show that our methods can guide generation towards the desired attributes while keeping high linguistic quality.",
+}
+
+@misc{senadeera_arxiv22_T5CTG,
+      title={Controlled Text Generation using T5 based Encoder-Decoder Soft Prompt Tuning and Analysis of the Utility of Generated Text in AI}, 
+      author={Damith Chamalke Senadeera and Julia Ive},
+      year={2022},
+      eprint={2212.02924},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2212.02924}, 
+}
+
+@inproceedings{wang_GEM23_PPC,
+    title = "Harnessing the Plug-and-Play Controller by Prompting",
+    author = "Wang, Hao  and
+      Sha, Lei",
+    editor = "Gehrmann, Sebastian  and
+      Wang, Alex  and
+      Sedoc, Jo{\~a}o  and
+      Clark, Elizabeth  and
+      Dhole, Kaustubh  and
+      Chandu, Khyathi Raghavi  and
+      Santus, Enrico  and
+      Sedghamiz, Hooman",
+    booktitle = "Proceedings of the Third Workshop on Natural Language Generation, Evaluation, and Metrics (GEM)",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.gem-1.14",
+    pages = "165--174",
+    abstract = "Controllable text generation is a growing field within natural language generation (NLG) that focuses on producing text that meets specific constraints in real-world applications. Previous approaches, such as plug-and-play controllers (PPCs), aimed to steer the properties of generated text in a flexible manner. However, these methods often compromised the integrity of the language model{'}s decoding process, resulting in less smooth text generation.Alternatively, other techniques utilized multiple attribute prompts to align the generated text with desired attributes, but this approach required prompt design for each attribute and was dependent on the size of the language model. This paper introduces a novel method for flexible attribute control in text generation using pre-trained language models (PLMs). The proposed approach aims to enhance the fluency of generated text by guiding the generation process with PPCs. The key idea is to dynamically adjust the distribution of generated text by modifying prompts, effectively constraining the output space of the language model and influencing the desired attribute. To enable smooth cooperation between the PLM and the PPC, our work innovativel proposes a new model fine-tuning method: Reinforcement Learning with Dynamic Adjust Feedback (RLDAF).This fine-tuning process adapts a small subset of the language model{'}s parameters based on the generating actions taken during the PPC control process. The resulting harmonious collaboration between the PLM and PPC leads to improved smoothness in text generation during inference. Extensive experiments were conducted on the SST2 dataset, and the proposed method outperformed previous approaches in various evaluation metrics, including text fluency and attribute consistency.",
+}
+
+@misc{ajwani_arxiv24_PPP,
+      title={Plug and Play with Prompts: A Prompt Tuning Approach for Controlling Text Generation}, 
+      author={Rohan Deepak Ajwani and Zining Zhu and Jonathan Rose and Frank Rudzicz},
+      year={2024},
+      eprint={2404.05143},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2404.05143}, 
+}
+
+@inproceedings{gu_emnlp22_Discrete,
+    title = "A Distributional Lens for Multi-Aspect Controllable Text Generation",
+    author = "Gu, Yuxuan  and
+      Feng, Xiaocheng  and
+      Ma, Sicheng  and
+      Zhang, Lingyuan  and
+      Gong, Heng  and
+      Qin, Bing",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.67",
+    doi = "10.18653/v1/2022.emnlp-main.67",
+    pages = "1023--1043",
+    abstract = "Multi-aspect controllable text generation is a more challenging and practical task than single-aspect control. Existing methods achieve complex multi-aspect control by fusing multiple controllers learned from single-aspect, but suffer from attribute degeneration caused by the mutual interference of these controllers. To address this, we provide observations on attribute fusion from a distributional perspective and propose to directly search for the intersection areas of multiple attribute distributions as their combination for generation. Our method first estimates the attribute space with an autoencoder structure. Afterward, we iteratively approach the intersections by jointly minimizing distances to points representing different attributes. Finally, we map them to attribute-relevant sentences with a prefix-tuning-based decoder. Experiments on the three-aspect control task, including sentiment, topic, and detoxification aspects, reveal that our method outperforms several strong baselines on attribute relevance and text quality and achieves the SOTA. Further analysis also supplies some explanatory support for the effectiveness of our approach.",
+}
+
+@inproceedings{yang_acl23_Tailor,
+    title = "Tailor: A Soft-Prompt-Based Approach to Attribute-Based Controlled Text Generation",
+    author = "Yang, Kexin  and
+      Liu, Dayiheng  and
+      Lei, Wenqiang  and
+      Yang, Baosong  and
+      Xue, Mingfeng  and
+      Chen, Boxing  and
+      Xie, Jun",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.25",
+    doi = "10.18653/v1/2023.acl-long.25",
+    pages = "410--427",
+    abstract = "Attribute-based Controlled Text Generation (CTG) refers to generating sentences that satisfy desirable attributes (e.g., emotions and topics). Existing work usually utilize fine-tuning or resort to extra attribute classifiers, yet suffer from increases in storage and inference time. To address these concerns, we explore attribute-based CTG in a parameter-efficient manner. In short, the proposed Tailor represents each attribute as a pre-trained continuous vector i.e., single-attribute prompt), which guides the generation of a fixed pre-trained language model (PLM) to satisfy a pre-specified attribute. These prompts can be simply concatenated as a whole for multi-attribute CTG without any re-training. Nevertheless, this may raise problems of fluency downgrading and position sensitivity. To solve this, Tailor provides two solutions to enhance the combination. The former contains a multi-attribute prompt mask and a re-indexing position sequence to bridge the gap between the training (one single-attribute prompt for each task) and the testing stage (concatenating two prompts). The latter introduces a trainable prompt connector to further enhance the combinations. Experiments demonstrate that, only requiring 0.08{\%} extra training parameters of the GPT-2, Tailor can achieve effective and general improvements on eleven attribute-specific generation tasks.",
+}
+
+@inproceedings{huang_acl23_PromptGating,
+    title = "An Extensible Plug-and-Play Method for Multi-Aspect Controllable Text Generation",
+    author = "Huang, Xuancheng  and
+      Liu, Zijun  and
+      Li, Peng  and
+      Li, Tao  and
+      Sun, Maosong  and
+      Liu, Yang",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.849",
+    doi = "10.18653/v1/2023.acl-long.849",
+    pages = "15233--15256",
+    abstract = "Recently, multi-aspect controllable text generation that controls the generated text in multiple aspects (e.g., sentiment, topic, and keywords) has attracted increasing attention. Although methods based on parameter efficient tuning like prefix-tuning could achieve multi-aspect controlling in a plug-and-play way, the mutual interference of multiple prefixes leads to significant degeneration of constraints and limits their extensibility to training-time unseen aspect combinations. In this work, we provide a theoretical lower bound for the interference and empirically found that the interference grows with the number of layers where prefixes are inserted. Based on these analyses, we propose using trainable gates to normalize the intervention of prefixes to restrain the growing interference. As a result, controlling training-time unseen combinations of aspects can be realized by simply concatenating corresponding plugins such that new constraints can be extended at a lower cost. In addition, we propose a unified way to process both categorical and free-form constraints. Experiments on text generation and machine translation demonstrate the superiority of our approach over baselines on constraint accuracy, text quality, and extensibility.",
+}
+
+@misc{tao_arxiv24_CAT,
+      title={CAT-LLM: Prompting Large Language Models with Text Style Definition for Chinese Article-style Transfer}, 
+      author={Zhen Tao and Dinghao Xi and Zhiyu Li and Liumin Tang and Wei Xu},
+      year={2024},
+      eprint={2401.05707},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2401.05707}, 
+}
+
+@inproceedings{juseon_acl24_instructcmp,
+    title = "{I}nstruct{CMP}: Length Control in Sentence Compression through Instruction-based Large Language Models",
+    author = "Juseon-Do, Juseon-Do  and
+      Kamigaito, Hidetaka  and
+      Okumura, Manabu  and
+      Kwon, Jingun",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.532",
+    pages = "8980--8996",
+    abstract = "Extractive summarization can produce faithful summaries but often requires additional constraints such as a desired summary length. Traditional sentence compression models do not typically consider the constraints because of their restricted model abilities, which require model modifications for coping with them. To bridge this gap, we propose Instruction-based Compression (InstructCMP), an approach to the sentence compression task that can consider the length constraint through instructions by leveraging the zero-shot task-solving abilities of Large Language Models (LLMs). For this purpose, we created new evaluation datasets by transforming traditional sentence compression datasets into an instruction format. By using the datasets, we first reveal that the current LLMs still face challenges in accurately controlling the length for a compressed text. To address this issue, we propose an approach named length priming, that incorporates additional length information into the instructions without external resources. While the length priming effectively works in a zero-shot setting, a training dataset with the instructions would further improve the ability of length control. Thus, we additionally created a training dataset in an instruction format to fine-tune the model on it. Experimental results and analysis show that applying the length priming significantly improves performances of InstructCMP in both zero-shot and fine-tuning settings without the need of any model modifications.",
+}
