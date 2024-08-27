@@ -17,12 +17,7 @@
     <a href="https://huggingface.co/papers/2408.12599">
         <img src="https://img.shields.io/badge/-%F0%9F%A4%97%20Page-orange?style=flat"/>
     </a>
-    <!-- Yuque -->
-    <a href="https://www.yuque.com/matong-an7ob/qf04ed/yzs6n19swv6pipri">
-        <img src="https://img.shields.io/badge/Paper--List-white?style=flat&logo=googlesheets">
-    </a>
 </p>
-
 
 <div align="center">
     <p>
@@ -48,13 +43,15 @@
 <div align="center"><small><sup>*</sup>Equal contribution.</small></div>
 <div align="center"><small><sup>†</sup>Corresponding author: Zhiyu Li (<a href="mailto:lizy@iaar.ac.cn">lizy@iaar.ac.cn</a>).</small></div>
 
-**If you find our work helpful, please consider staring our GitHub to stay updated with the latest in Controllable Text Generation!**
+<p align="center">
+  <strong>🌟 STAR US! If you find our work helpful, please consider starring our GitHub to stay updated with the latest in Controllable Text Generation! 🌟</strong>
+</p>
 
 ## 📰 News
 
+- **[2024/08/26]** We have updated our paper list, which can now be accessed on our [GitHub page](https://github.com/IAAR-Shanghai/CTGSurvey).
 - **[2024/08/23]** Our paper is published on the arXiv platform: https://arxiv.org/abs/2408.12599.
 - **[2024/08/23]** Our paper secured the second position on Hugging Face's Daily Papers module: https://huggingface.co/papers/2408.12599.
-- **[2024/08/26]** We have updated our paper list, which can now be accessed on our [GitHub page](https://github.com/IAAR-Shanghai/CTGSurvey).
 
 ## 🔗 Introduction
 
@@ -131,13 +128,6 @@ This survey addresses key challenges in CTG research and suggests future directi
 
 This paper aims to provide valuable insights and guidance for researchers and developers working in the field of Controllable Text Generation. All references, along with a Chinese version of this survey, are open-sourced and available at [https://github.com/IAAR-Shanghai/CTGSurvey](https://github.com/IAAR-Shanghai/CTGSurvey).
 
-## 🧩 Project Structure
-
-- **`figures/`**: Contains all the figures used in the repository.
-- **`latex/`**: Includes the LaTeX source files for the survey paper.
-- **`CTG_Survey_Chinese.pdf`**: The Chinese version of the survey paper.
-- **`README.md`**: This file, providing an overview of the repository.
-
 ## 📚 Paper List
 
 We’ve compiled a comprehensive spreadsheet of all the papers we reviewed, accessible [here](https://www.yuque.com/matong-an7ob/qf04ed/yzs6n19swv6pipri). A more user-friendly table format is in progress.
@@ -150,6 +140,32 @@ Below, you'll find a categorized list of papers from 2023 and 2024, organized by
 
 ##### Retraining
 
+- **CTRL: A Conditional Transformer Language Model for Controllable Generation**  
+  Salesforce Research, arxiv'19, 2019 [[Paper](https://arxiv.org/abs/1909.05858)]
+- **Parallel Refinements for Lexically Constrained Text Generation with BART**  
+  HKU, EMNLP'20, 2020 [[Paper](https://aclanthology.org/2021.emnlp-main.681/)]
+- **PAIR: Planning and Iterative Refinement in Pre-trained Transformers for Long Text Generation**  
+  Northeastern University, EMNLP'20, 2020 [[Paper](https://aclanthology.org/2020.emnlp-main.57/)]
+- **Pre-Training Based Personalized Dialogue Generation Model with Persona-sparse Data**  
+  THU, AAAI'20, 2020 [[Paper](https://ojs.aaai.org/index.php/AAAI/article/view/6518)]
+- **POINTER: Constrained Progressive Text Generation via Insertion-based Generative Pre-training**  
+  Microsoft, EMNLP'20, 2020 [[Paper](https://aclanthology.org/2020.emnlp-main.698/)]
+- **CoCon: A Self-Supervised Approach for Controlled Text Generation**  
+  NTU, ICLR'21, 2021 [[Paper](https://openreview.net/forum?id=VD_ozqvBy4W)]
+- **A Simple and Efficient Multi-Task Learning Approach for Conditioned Dialogue Generation**  
+  Universit´e de Montr´eal, NAACL'21, 2021 [[Paper](https://aclanthology.org/2021.naacl-main.392/)]
+- **CHAE: Fine-Grained Controllable Story Generation with Characters, Actions and Emotions**  
+  Tongji University, COLING'22, 2022 [[Paper](https://aclanthology.org/2022.coling-1.559/)]
+- **Director: Generator-Classifiers For Supervised Language Modeling**  
+  McGill University, IJCNLP'22, 2022 [[Paper](https://aclanthology.org/2022.aacl-main.39/)]
+- **Emotional Text Generation with Hard Constraints**  
+  Huaqiao University, ICFTIC'22, 2022 [[Paper](https://ieeexplore.ieee.org/abstract/document/10075091)]
+- **FAST: Improving Controllability for Text Generation with Feedback Aware Self-Training**  
+  Microsoft, arxiv'22, 2022 [[Paper](https://arxiv.org/abs/2210.03167)]
+- **Fine-Grained Controllable Text Generation Using Non-Residual Prompting**  
+  Research Institutes of Sweden, ACL'22, 2022 [[Paper](https://aclanthology.org/2022.acl-long.471/)]
+- **Genre-Controllable Story Generation via Supervised Contrastive Learning**  
+  Sungkyunkwan University, WWW'22, 2022 [[Paper](https://dl.acm.org/doi/10.1145/3485447.3512004)]
 - **Fine-Grained Sentiment-Controlled Text Generation Approach Based on Pre-Trained Language Model**  
   Zhejiang University of Technology, Appl. Sci., 2023 [[Paper](https://www.mdpi.com/2076-3417/13/1/264)]
 - **Lexical Complexity Controlled Sentence Generation for Language Learning**  
@@ -161,6 +177,14 @@ Below, you'll find a categorized list of papers from 2023 and 2024, organized by
 
 ##### Fine-Tuning
 
+- **Technical Report: Auxiliary Tuning and its Application to Conditional Text Generation**  
+  AI21, arxiv'20, 2020 [[Paper](https://arxiv.org/abs/2006.16823)]
+- **DisCup: Discriminator Cooperative Unlikelihood Prompt-tuning for Controllable Text Generation**  
+  BIT, EMNLP'22, 2022 [[Paper](https://aclanthology.org/2022.emnlp-main.223/)]
+- **Finetuned Language Models are Zero-Shot Learners**  
+  Google, ICLR'22, 2022 [[Paper](https://openreview.net/forum?id=gEZrGCozdqR)]
+- **MReD: A Meta-Review Dataset for Structure-Controllable Text Generation**  
+  Alibaba, ACL'22_findings, 2022 [[Paper](https://aclanthology.org/2022.findings-acl.198/)]
 - **Language Detoxification with Attribute-Discriminative Latent Space**  
   KAIST, ACL'23, 2023 [[Paper](https://aclanthology.org/2023.acl-long.565/)]
 - **Controlled Text Generation with Hidden Representation Transformations**  
@@ -196,6 +220,14 @@ Below, you'll find a categorized list of papers from 2023 and 2024, organized by
 
 ##### Reinforcement Learning
 
+- **Learning to summarize with human feedback**  
+  OpenAI, NeurIPS'20, 2020 [[Paper](https://proceedings.neurips.cc/paper/2020/hash/1f89885d556929e98d3ef9b86448f951-Abstract.html)]
+- **A Distributional Approach to Controlled Text Generation**  
+  Muhammad Khalifa, ICLR'21, 2021 [[Paper](https://openreview.net/forum?id=jWkw45-9AbL)]
+- **Efficient Reinforcement Learning for Unsupervised Controlled Text Generation**  
+  agaralabs, arxiv'22, 2022 [[Paper](https://arxiv.org/abs/2204.07696)]
+- **Training language models to follow instructions with human feedback**  
+  openAI, NeurIPS'22, 2022 [[Paper](https://openreview.net/forum?id=TG8KACxEON)]
 - **STEER: Unified Style Transfer with Expert Reinforcement**  
   University of Washington, EMNLP'23_findings, 2023 [[Paper](https://aclanthology.org/2023.findings-emnlp.506/)]
 - **Prompt-Based Length Controlled Generation with Multiple Control Types**  
@@ -213,6 +245,24 @@ Below, you'll find a categorized list of papers from 2023 and 2024, organized by
 
 ##### Prompt Engineering
 
+- **AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts**  
+  UCI&UCB, EMNLP'20, 2020 [[Paper](https://aclanthology.org/2020.emnlp-main.346/)]
+- **Attribute Alignment: Controlling Text Generation from Pre-trained Language Models**  
+  University of California, EMNLP'21_findings, 2021 [[Paper](https://aclanthology.org/2021.findings-emnlp.194/)]
+- **GPT Understands, Too**  
+  THU, arxiv'21, 2021 [[Paper](https://arxiv.org/abs/2103.10385)]
+- **Prefix-Tuning: Optimizing Continuous Prompts for Generation**  
+  University of California, Santa Barbara, ACL'21, 2021 [[Paper](https://aclanthology.org/2021.acl-long.353/)]
+- **The Power of Scale for Parameter-Efficient Prompt Tuning**  
+  Google, EMNLP'21, 2021 [[Paper](https://aclanthology.org/2021.emnlp-main.243/)]
+- **Controllable Natural Language Generation with Contrastive Prefixes**  
+  UCSB, ACL'22_findings, 2022 [[Paper](https://aclanthology.org/2022.findings-acl.229/)]
+- **A Distributional Lens for Multi-Aspect Controllable Text Generation**  
+  HIT, EMNLP'22_oral, 2022 [[Paper](https://aclanthology.org/2022.emnlp-main.67/)]
+- **P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks**  
+  THU, ACL'22, 2022 [[Paper](https://aclanthology.org/2022.acl-short.8/)]
+- **Controlled Text Generation using T5 based Encoder-Decoder Soft Prompt Tuning and Analysis of the Utility of Generated Text in AI**  
+  Queen Mary University of London, arxiv'22, 2022 [[Paper](https://arxiv.org/abs/2212.02924)]
 - **Controllable Generation of Dialogue Acts for Dialogue Systems via Few-Shot Response Generation and Ranking**  
   University of California Santa Cruz, SIGDIAL'23, 2023 [[Paper](https://aclanthology.org/2023.sigdial-1.32/)]
 - **PCFG-based Natural Language Interface Improves Generalization for Controlled Text Generation**  
@@ -234,6 +284,10 @@ Below, you'll find a categorized list of papers from 2023 and 2024, organized by
 
 ##### Latent Space Manipulation
 
+- **Deep Extrapolation for Attribute-Enhanced Generation**  
+  Salesforce Research, NeurIPS'21, 2021 [[Paper](https://openreview.net/forum?id=NCDMYD2y5kK)]
+- **Extracting Latent Steering Vectors from Pretrained Language Models**  
+  Allen Institute for Artificial Intelligence, ACL'22_findings, 2022 [[Paper](https://aclanthology.org/2022.findings-acl.48/)]
 - **Activation Addition: Steering Language Models Without Optimization**  
   UC Berkeley, arxiv'23, 2023 [[Paper](https://arxiv.org/abs/2308.10248)]
 - **Evaluating, Understanding, and Improving Constrained Text Generation
@@ -262,6 +316,66 @@ Below, you'll find a categorized list of papers from 2023 and 2024, organized by
 
 ##### Decoding-time Intervention
 
+- **Generalization through Memorization: Nearest Neighbor Language Models**  
+  Urvashi Khandelwal, ICLR'20, 2020 [[Paper](https://openreview.net/forum?id=HklBjCEKvH)]
+- **MEGATRON-CNTRL: Controllable Story Generation with External Knowledge Using Large-Scale Language Models**  
+  USTHK, EMNLP'20, 2020 [[Paper](https://aclanthology.org/2020.emnlp-main.226/)]
+- **Plug-and-Play Conversational Models**  
+  USTHK, EMNLP'20 findings, 2020 [[Paper](https://aclanthology.org/2020.findings-emnlp.219/)]
+- **Plug and Play Language Models: A Simple Approach to Controlled Text Generation**  
+  California Institute of Technology, ICLR'20, 2020 [[Paper](https://openreview.net/forum?id=H1edEyBKDS)]
+- **DExperts: Decoding-Time Controlled Text Generation with Experts and Anti-Experts**  
+  University of Washington, ACL'21, 2021 [[Paper](https://aclanthology.org/2021.acl-long.522/)]
+- **FUDGE: Controlled Text Generation With Future Discriminators**  
+  UC Berkeley, NAACL'21, 2021 [[Paper](https://aclanthology.org/2021.naacl-main.276/)]
+- **GeDi: Generative Discriminator Guided Sequence Generation**  
+  Salesforce Research, EMNLP'21, 2021 [[Paper](https://aclanthology.org/2021.findings-emnlp.424/)]
+- **Controllable Generation from Pre-trained Language Models via Inverse Prompting**  
+  THU, KDD'21, 2021 [[Paper](https://dl.acm.org/doi/10.1145/3447548.3467418)]
+- **A Plug-and-Play Method for Controlled Text Generation**  
+  ETH Zürich, EMNLP'21 findings, 2021 [[Paper](https://aclanthology.org/2021.findings-emnlp.334/)]
+- **Controlled Text Generation as Continuous Optimization with Multiple Constraints**  
+  CMU, NeurIPS'21, 2021 [[Paper](https://openreview.net/forum?id=kTy7bbm-4I4)]
+- **NeuroLogic Decoding: (Un)supervised Neural Text Generation with Predicate Logic Constraints**  
+  Allen Institute for Artificial Intelligence, NAACL'21, 2021 [[Paper](https://aclanthology.org/2021.naacl-main.339/)]
+- **Plug-and-Blend: A Framework for Controllable Story Generation with Blended Control Codes**  
+  Georgia Institute of Technology, Workshop on Narrative Understanding'21, 2021 [[Paper](https://aclanthology.org/2021.nuse-1.7/)]
+- **A Causal Lens for Controllable Text Generation**  
+  UC San Diego, NeurIPS'21, 2021 [[Paper](https://openreview.net/forum?id=kAm9By0R5ME)]
+- **Self-Diagnosis and Self-Debiasing: A Proposal for Reducing Corpus-Based Bias in NLP**  
+  LMU Munich, TACL'21, 2021 [[Paper](https://aclanthology.org/2021.tacl-1.84/)]
+- **Controllable Text Generation for All Ages: Evaluating a Plug-and-Play Approach to Age-Adapted Dialogue**  
+  University of Amsterdam, GEM'22, 2022 [[Paper](https://aclanthology.org/2022.gem-1.14/)]
+- **BeamR: Beam Reweighing with Attribute Discriminators for Controllable Text Generation**  
+  Vanguard, AACL'22_findings, 2022 [[Paper](https://aclanthology.org/2022.findings-aacl.40/)]
+- **Classifiers are Better Experts for Controllable Text Generation**  
+  Tinkoff, NeurIPS'22 workshop Transfer Learning for Natural Language Processing, 2022 [[Paper](https://neurips.cc/virtual/2022/56576)]
+- **Improving Controllable Text Generation with Position-Aware Weighted Decoding**  
+  HIT, ACL'22_findings, 2022 [[Paper](https://aclanthology.org/2022.findings-acl.272/)]
+- **Controllable Text Generation with Language Constraints**  
+  Princeton University, arxiv, 2022 [[Paper](https://arxiv.org/abs/2212.10466)]
+- **COLD Decoding: Energy-based Constrained Text Generation with Langevin Dynamics**  
+  University of Washington, NeurIPS'22, 2022 [[Paper](https://papers.nips.cc/paper_files/paper/2022/hash/3e25d1aff47964c8409fd5c8dc0438d7-Abstract-Conference.html)]
+- **Collocation2Text: Controllable Text Generation from Guide Phrases in Russian**  
+  Vyatka State University, Dialogue-2022 conference, 2022 [[Paper](https://www.dialog-21.ru/media/5794/vychegzhaninsvpluskotelnikovev076.pdf)]
+- **CounterGeDi: A Controllable Approach to Generate Polite, Detoxified and Emotional Counterspeech**  
+  Indian Institute of Technology, IJCAI'22, 2022 [[Paper](https://www.ijcai.org/proceedings/2022/716)]
+- **Bridging the Gap Between Training and Inference of Bayesian Controllable Language Models**  
+  THU, arxiv'22, 2022 [[Paper](https://arxiv.org/abs/2206.05519v1)]
+- **Nearest Neighbor Language Models for Stylistic Controllable Generation**  
+  University of Marburg, GEM'22, 2022 [[Paper](https://aclanthology.org/2022.gem-1.25/)]
+- **Mix and Match: Learning-free Controllable Text Generationusing Energy Language Models**  
+  University of California San Diego, ACL'22, 2022 [[Paper](https://aclanthology.org/2022.acl-long.31/)]
+- **Gradient-based Constrained Sampling from Language Models**  
+  CMU, EMNLP'22, 2022 [[Paper](https://aclanthology.org/2022.emnlp-main.144/)]
+- **Controllable Text Generation with Neurally-Decomposed Oracle**  
+  UCLA, NeruIPS'22, 2022 [[Paper](https://papers.nips.cc/paper_files/paper/2022/hash/b40d5797756800c97f3d525c2e4c8357-Abstract-Conference.html)]
+- **NeuroLogic A*esque Decoding: Constrained Text Generation with Lookahead Heuristics**  
+  Allen Institute for Artificial Intelligence, NAACL'22, 2022 [[Paper](https://aclanthology.org/2022.naacl-main.57/)]
+- **Plug-and-Play Recipe Generation with Content Planning**  
+  University of Cambridge, EMNLP 2022 GEM workshop, 2022 [[Paper](https://aclanthology.org/2022.gem-1.19/)]
+- **Sequentially Controlled Text Generation**  
+  University of Southern California, EMNLP'22, 2022 [[Paper](https://aclanthology.org/2022.findings-emnlp.509/)]
 - **Air-Decoding: Attribute Distribution Reconstruction for Decoding-Time Controllable Text Generation**  
   USTC, EMNLP'23, 2023 [[Paper](https://aclanthology.org/2023.emnlp-main.512/)]
 - **A Block Metropolis-Hastings Sampler for Controllable Energy-based Text Generation**  
@@ -313,27 +427,15 @@ Below, you'll find a categorized list of papers from 2023 and 2024, organized by
 - **Uncertainty is Fragile: Manipulating Uncertainty in Large Language Models**  
   Rutgers, arxiv'24, 2024 [[Paper](https://arxiv.org/abs/2407.11282)]
 
-### Type: Benchmark
-
-- **Causal ATE Mitigates Unintended Bias in Controlled Text Generation**  
-  IISc, Bangalore, arxiv'23, 2023 [[Paper](https://arxiv.org/pdf/2311.11229)]
-- **Evaluating Large Language Models on Controlled Generation Tasks**  
-  University of Southern California, EMNLP'23, 2023 [[Paper](https://aclanthology.org/2023.emnlp-main.190.pdf)]
-- **Benchmarking Large Language Models on Controllable Generation under Diversified Instructions**  
-  USTC, AAAI'24, 2024 [[Paper](https://arxiv.org/abs/2401.00690)]
-- **Controllable Text Generation in the Instruction-Tuning Era**  
-  CMU, arxiv'24, 2024 [[Paper](https://arxiv.org/abs/2405.01490)]
-- **FOFO: A Benchmark to Evaluate LLMs’ Format-Following Capability**  
-  Salesforce Research, arxiv'24, 2024 [[Paper](https://arxiv.org/pdf/2402.18667)]
-- **Benchmarking Generation and Evaluation Capabilities of Large Language
-  Models for Instruction Controllable Summarization**  
-  Yale University, NAACL'24, 2024 [[Paper](https://aclanthology.org/2024.findings-naacl.280/)]
-
 ### Type: Survey
 
+- **Exploring Controllable Text Generation Techniques**  
+  CMU, COLING'20, 2023 [[Paper](https://dl.acm.org/doi/10.1145/3617680)]
+- **Conditional Text Generation for Harmonious Human-Machine Interaction**  
+  NWPT, TIST'21, 2021 [[Paper](https://dl.acm.org/doi/10.1145/3439816#core-collateral-purchase-access)]
 - **How to Control Sentiment in Text Generation: A Survey of the State-of-the-Art in Sentiment-Control Techniques**  
-  DCU, nan, 2023 [[Paper](https://aclanthology.org/2023.wassa-1.30/)]
+  DCU, WASSA'23, 2023 [[Paper](https://aclanthology.org/2023.wassa-1.30/)]
 - **A Survey of Controllable Text Generation using Transformer-based Pre-trained Language Models**  
-  BIT, nan, 2023 [[Paper](https://dl.acm.org/doi/10.1145/3617680)]
-- **A recent survey on controllable text generation: A causal perspective**  
-  Tongji, nan, 2024 [[Paper](https://www.sciencedirect.com/science/article/pii/S2667325824000062)]
+  BIT, ACM CSUR, 2023 [[Paper](https://dl.acm.org/doi/10.1145/3617680)]
+- **A Recent Survey on Controllable Text Generation: A Causal Perspective**  
+  Tongji, Fundamental Research, 2024 [[Paper](https://www.sciencedirect.com/science/article/pii/S2667325824000062)]
