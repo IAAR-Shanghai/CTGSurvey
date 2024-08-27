@@ -48,7 +48,10 @@
 <div align="center"><small><sup>*</sup>Equal contribution.</small></div>
 <div align="center"><small><sup>†</sup>Corresponding author: Zhiyu Li (<a href="mailto:lizy@iaar.ac.cn">lizy@iaar.ac.cn</a>).</small></div>
 
-**If you find our work helpful, please consider staring our GitHub to stay updated with the latest in Controllable Text Generation!**
+
+> \[!IMPORTANT\]
+>
+> 🌟 **Star Us!** If you find our work helpful, please consider staring our GitHub to stay updated with the latest in Controllable Text Generation!
 
 ## 📰 News
 
