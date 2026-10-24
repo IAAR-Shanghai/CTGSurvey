@@ -281,6 +281,8 @@ Below, you'll find a categorized list of papers from 2023 and 2024, organized by
   University of Toronto, AAAI'24_workshop, 2024 [[Paper](https://arxiv.org/abs/2404.05143)]
 - **TrustAgent: Towards Safe and Trustworthy LLM-based Agents through Agent Constitution**  
   UCSB, arxiv'24, 2024 [[Paper](https://arxiv.org/abs/2402.01586)]
+- **Translate-and-Revise: Boosting Large Language Models for Constrained Translation**  
+  NEU, CCL'24, 2024 [[Paper](https://aclanthology.org/2024.ccl-1.82/)]
 
 ##### Latent Space Manipulation
 
